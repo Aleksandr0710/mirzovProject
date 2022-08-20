@@ -1,1 +1,8 @@
 /* rgb 121, 126, 204 */
+.header__title,
+.foter__title {
+  color: #f52;
+}
+.main__gallery {
+  display: flex;
+}
