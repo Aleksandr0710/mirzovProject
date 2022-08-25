@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./img/favicon.ico" type="image/svg+xml" />
     <title>Mirzov project</title>
   </head>
   <body>
     <header class="header">
-      <h1><span class="header__title">Мой</span>Маркет</h1>
+      <div class="header__logo">
+        <img src="./img/logo.png" alt="логотип" height="50" />
+        <h1><span class="header__title">Mirzov</span>Market</h1>
+      </div>
       <hr />
       <nav class="header__nav">
         <a href="#">Электроника</a> <span>></span>
@@ -68,6 +72,7 @@
           <li>Вес:<b>173 г</b></li>
         </ul>
       </section>
+      <iframe src="./iframe"></iframe><iframe></iframe>
       <section>
         <h2>Описание</h2>
         <p>
@@ -102,8 +107,64 @@
           кино.
         </p>
       </section>
+      <section>
+        <h2>сравнение моделей</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Модель</th>
+              <th>Вес</th>
+              <th>Высота</th>
+              <th>Ширина</th>
+              <th>Толщина</th>
+              <th>Чип</th>
+              <th>Объём памяти</th>
+              <th>Беспроводная зарядка</th>
+              <th>Аккумулятор</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Iphone11</td>
+              <td>194 грамма</td>
+              <td>150.9 мм</td>
+              <td>75.7 мм</td>
+              <td>8.3 мм</td>
+              <td>A13 Bionicchip</td>
+              <td>до 128 Гб</td>
+              <td>Нет</td>
+              <td>До 17 часов</td>
+            </tr>
+            <tr>
+              <td>Iphone12</td>
+              <td>164 грамма</td>
+              <td rowspan="2">146.7 мм</td>
+              <td rowspan="2">71.5 мм</td>
+              <td>7.4 мм</td>
+              <td>A14 Bionicchip</td>
+              <td>до 256 Гб</td>
+              <td rowspan="2">Да</td>
+              <td rowspan="2">До 19 часов</td>
+            </tr>
+            <tr>
+              <td>Iphone13</td>
+              <td>174 грамма</td>
+              <td>7.65 мм</td>
+              <td>A15 Bionicchip</td>
+              <td>до 512 Гб</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+      </section>
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__title">
+          <h2>Отзывы</h2>
+          <div>
+            <span class="reviews__count">3245</span>
+            <button>Add new</button>
+          </div>
+        </div>
         <div>
           <img src="./img/review-1.jpeg" alt="Марк Г." height="200" />
         </div>
@@ -113,15 +174,15 @@
         </div>
         <p><b>Опыт использования:</b> менее месяца</p>
         <p>
-          <b>Достоинства:</b> <br />это мой первый айфон после после огромного
-          количества телефонов на андроиде. всёплавно, чётко и красиво. довольно
-          шустрое устройство. камера весьма неплохая,ширик тоже на высоте.
+          <b>Достоинства:</b> <br />это мой первый айфон после огромного
+          количества телефонов на андроиде. всё плавно, чётко и красиво.
+          довольно шустрое устройство. камера весьма неплохая.
         </p>
         <p>
           <b>Недостатки:</b> <br />к самому устройству мало имеет отношение, но
-          перенос данных с андроида - адскаявещь) а если нужно переносить фото с
-          компа, то это только через itunes, который урезает качество фотографий
-          исходное
+          перенос данных с андроида - адская вещь) а если нужно переносить фото
+          с компа, то это только через itunes, который урезает качество
+          фотографий
         </p>
         <hr />
         <div>
@@ -141,12 +202,12 @@
     </main>
     <hr />
     <footer class="footer">
-      © ООО «<span class="foter__title">Мой</span>Маркет», 2018-2022. Для
+      © ООО «<span class="footer__title">Mirzov</span>Market», 2018-2022. Для
       уточнения информации звоните по номеру
       <a href="tel:79000000000">+7 900 000 0000</a>, а предложения по
       сотрудничеству отправляйте на почту
       <a href="mailto:partner@mymarket.com">partner@mymarket.com</a>
-      <br /><a href="#"> в начало страници </a>
+      <br /><a href="#"> в начало страницы </a>
     </footer>
   </body>
 </html>
