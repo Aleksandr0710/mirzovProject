@@ -1,0 +1,12 @@
+.body {
+  margin: 0;
+  height: 100vh;
+}
+
+.ad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  height: 100%;
+}
