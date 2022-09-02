@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="icon" href="./img/favicon.ico" type="image/svg+xml" />
   <title>Mirzov project</title>
 </head>
 
-<body >
+<body>
   <header class="header wrapper">
     <div class="header__logo">
       <img src="./img/logo.png" alt="логотип" height="50" />
@@ -18,88 +19,96 @@
         <span class="header__subtitle">Mirzov</span>Market
       </h1>
     </div>
-    <hr />
-    <nav class="header__nav">
-      <a href="#">Электроника</a> <span>></span>
-      <a href="#">Смартфоны и гаджеты</a> <span>></span>
-      <a href="#">Мобильные телефоны</a><span>></span><a href="#">Apple</a>
-    </nav>
   </header>
   <main class="main wrapper">
+    <nav class="main__nav">
+      <a href="#">Электроника</a> <span>></span>
+      <a href="#">Смартфоны и гаджеты</a><span>></span>
+      <a href="#">Мобильные телефоны</a><span>></span><a href="#">Apple</a>
+    </nav>
+    <h2 class="main__title">Смартфон Apple iPhone 13, голубой</h2>
     <div class="main__gallery">
-      <img src="./img/image-2.webp" alt="iPhone 13-экран" height="370" />
-      <img src="./img/image-5.webp" alt="iPhone 13-вид спереди и сзади" height="370" />
-      <img src="./img/image-3.webp" alt="iPhone 13-вид сбоку" height="370" />
-      <img src="./img/image-4.webp" alt="iPhone 13-камера" height="370" />
-      <img src="./img/image-1.webp" alt="iPhone 13-вид сзади и спереди" height="370" />
+      <img class="big-img" src="./img/image-2.webp" alt="iPhone 13-экран" height="387" />
+      <img class="big-img" src="./img/image-5.webp" alt="iPhone 13-вид спереди и сзади" height="387" />
+      <img class="big-img" src="./img/image-3.webp" alt="iPhone 13-вид сбоку" height="387" />
+      <img class="big-img" src="./img/image-4.webp" alt="iPhone 13-камера" height="387" />
+      <img class="big-img" src="./img/image-1.webp" alt="iPhone 13-вид сзади и спереди" height="387" />
     </div>
-    <h2>Смартфон Apple iPhone 13</h2>
-    <h3>Цена <s>75 990₽</s> 67 990₽</h3>
-    <button>Добавить в корзину</button> <button>В избранное</button>
-    <div>
-      <p><b>Цвет товара: голубой</b></p>
+    <div class="main__content">
+      <section>
+        <p class="s"><b>Цвет товара: голубой</b></p>
+        <div class="small-gallery">
+          <figure class="small-img"><img src="./img/color-1.webp" alt="красный" height="60" /></figure>
+          <figure class="small-img"><img src="./img/color-2.webp" alt="темно-зеленый" height="60" /></figure>
+          <figure class="small-img"><img src="./img/color-3.webp" alt="розовый" height="60" /></figure>
+          <figure class="small-img"><img src="./img/color-4.webp" alt="синий" height="60" /></figure>
+          <figure class="small-img"><img src="./img/color-6.webp" alt="черный" height="60" /></figure>
+          <figure class="small-img"><img src="./img/color-5.webp" alt="белый" height="60" /></figure>
+        </div>
+        <p><b>Конфигурация памяти: 128 ГБ</b></p>
+        <button>126 ГБ</button> <button>256 ГБ</button> <button>512 ГБ</button>
+        <h3>Характеристики товара</h3>
+        <ul>
+          <li>Экран:<b>6.1</b></li>
+          <li>Встроенная память:<b>128 ГБ</b></li>
+          <li>Операционная система:<b>iOS 15</b></li>
+          <li>Беспроводные интерфейсы:<b>NFC, Bluetooth, Wi-Fi</b></li>
+          <li>
+            Процессор:
+            <a href="https://ru.wikipedia.org/wiki/Apple_A15" title="вы будете перенаправлены на страницу Википедии"
+              target="Apple A15">AppleA15 Bionic</a>
+          </li>
+          <li>Вес:<b>173 г</b></li>
+        </ul>
+        <h2>Описание</h2>
+        <p>
+          Наша самая совершенная система двух камер.<br />
+          Особый взгляд на прочность дисплея.<br />
+          Чип, с которым всё супербыстро.<br />
+          Аккумулятор держится заметно дольше.<br />
+          <i>iPhone 13 - сильный мира всего.</i>
+        </p>
+        <p>
+          Мы разработали совершенно новую схему расположения и
+          развернулиобъективы на 45 градусов. Благодаря этому внутри корпуса
+          поместилась нашалучшая система двух камер с увеличенной матрицей
+          широкоугольной камеры.Кроме того, мы освободили место для системы
+          оптической стабилизацииизображения сдвигом матрицы. И повысили
+          скорость работы матрицы насверхширокоугольной камере.
+        </p>
+        <p>
+          Новая сверхширокоугольная камера видит больше деталей в тёмных
+          областях снимков. Новая широкоугольная камера улавливает на 47% больше
+          света для более качественных фотографий и видео. Новая оптическая
+          стабилизация сосдвигом матрицы обеспечит чёткие кадры даже в
+          неустойчивом положении.
+        </p>
+        <p>
+          Режим «Киноэффект» автоматически добавляет великолепные эффекты
+          перемещенияфокуса и изменения резкости. Просто начните запись видео.
+          Режим «Киноэффект»будет удерживать фокус на объекте съёмки, создавая
+          красивый эффект размытия вокруг него. Режим «Киноэффект» распознаёт,
+          когда нужно перевести фокус на другого человека или объект, который
+          появился в кадре. Теперь ваши видео будут смотреться как настоящее
+          кино.
+        </p>
+      </section>
+      <section class="main__sidebar">
+        <div class="main__price">
+          <p><span class="old__cost"><s>75 990₽</s></span> <span class="Discount">8%</span></p>
+          <span class="new__cost">67 990₽</span>
+          <p>
+            Самовывоз в четверг, 1 сентября — <b>бесплатно</b>
+            <br>
+            Курьером в четверг, 1 сентября — <b>бесплатно</b>
+          </p>
+          <button class="button__cart">Добавить в корзину</button><button class="favorites__button">В избранное</button>
+        </div>
+        <p class="ad">Реклама</p>
+        <iframe class="iframe" src="./ad.html" width="560" height="315"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GLlEfWNXJaM" allow="fullscreen"></iframe>
+      </section>
     </div>
-    <div>
-      <img src="./img/color-1.webp" alt="красный" height="100" />
-      <img src="./img/color-2.webp" alt="темно-зеленый" height="100" />
-      <img src="./img/color-3.webp" alt="розовый" height="100" />
-      <img src="./img/color-4.webp" alt="синий" height="100" />
-      <img src="./img/color-6.webp" alt="черный" height="100" />
-      <img src="./img/color-5.webp" alt="белый" height="100" />
-    </div>
-    <p><b>Конфигурация памяти: 128 ГБ</b></p>
-    <button>126 ГБ</button> <button>256 ГБ</button> <button>512 ГБ</button>
-    <section>
-      <h3>Характеристики товара</h3>
-      <ul>
-        <li>Экран: <b>6.1</b></li>
-        <li>Встроенная память: <b>128 ГБ</b></li>
-        <li>Операционная система: <b>iOS 15</b></li>
-        <li>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
-        <li>
-          Процессор:
-          <a href="https://ru.wikipedia.org/wiki/Apple_A15" title="вы будете перенаправлены на страницу Википедии"
-            target="Apple A15">AppleA15 Bionic</a>
-        </li>
-        <li>Вес:<b>173 г</b></li>
-      </ul>
-    </section>
-    <iframe src="./ad.html" width="560" height="315"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GLlEfWNXJaM" allow="fullscreen"></iframe>
-    <section>
-      <h2>Описание</h2>
-      <p>
-        Наша самая совершенная система двух камер.<br />
-        Особый взгляд на прочность дисплея.<br />
-        Чип, с которым всё супербыстро.<br />
-        Аккумулятор держится заметно дольше.<br />
-        <i>iPhone 13 - сильный мира всего.</i>
-      </p>
-      <p>
-        Мы разработали совершенно новую схему расположения и
-        развернулиобъективы на 45 градусов. Благодаря этому внутри корпуса
-        поместилась нашалучшая система двух камер с увеличенной матрицей
-        широкоугольной камеры.Кроме того, мы освободили место для системы
-        оптической стабилизацииизображения сдвигом матрицы. И повысили
-        скорость работы матрицы насверхширокоугольной камере.
-      </p>
-      <p>
-        Новая сверхширокоугольная камера видит больше деталей в тёмных
-        областях снимков. Новая широкоугольная камера улавливает на 47% больше
-        света для более качественных фотографий и видео. Новая оптическая
-        стабилизация сосдвигом матрицы обеспечит чёткие кадры даже в
-        неустойчивом положении.
-      </p>
-      <p>
-        Режим «Киноэффект» автоматически добавляет великолепные эффекты
-        перемещенияфокуса и изменения резкости. Просто начните запись видео.
-        Режим «Киноэффект»будет удерживать фокус на объекте съёмки, создавая
-        красивый эффект размытия вокруг него. Режим «Киноэффект» распознаёт,
-        когда нужно перевести фокус на другого человека или объект, который
-        появился в кадре. Теперь ваши видео будут смотреться как настоящее
-        кино.
-      </p>
-    </section>
     <section>
       <h2>Cравнение моделей</h2>
       <table border="1">
@@ -147,7 +156,6 @@
             <td>до 512 Гб</td>
           </tr>
         </tbody>
-        <tfoot></tfoot>
       </table>
     </section>
     <section class="reviews">
@@ -158,7 +166,6 @@
           <button>оставить отзыв</button>
         </div>
       </div>
-
       <div class="reviews__item">
         <img src="./img/review-1.jpeg" alt="Марк Г." height="200" />
         <div class="reviews__text">
@@ -180,27 +187,22 @@
           </p>
         </div>
       </div>
-      <hr />
       <div class="reviews__item">
-        
-          <img src="./img/review-2.jpeg" alt="Валерий Коваленко" height="200" />
-       <div class="reviews__text">
-        <b>Валерий Коваленко</b>
-        <div>
-          <img src="./img/star-4.png" alt="4 звезды" height="30" />
+        <img src="./img/review-2.jpeg" alt="Валерий Коваленко" height="200" />
+        <div class="reviews__text">
+          <b>Валерий Коваленко</b>
+          <div>
+            <img src="./img/star-4.png" alt="4 звезды" height="30" />
+          </div>
+          <p><b>Опыт использования:</b>менее месяца</p>
+          <p>
+            <b>Достоинства:</b><br />OLED экран, Дизайн, Система камер, Шустрый
+            А15, Заряд держит долго
+          </p>
+          <p><b>Недостатки:</b> <br />Плохая ремонтопригодность</p>
         </div>
-        <p><b>Опыт использования:</b>менее месяца</p>
-        <p>
-          <b>Достоинства:</b><br />OLED экран, Дизайн, Система камер, Шустрый
-          А15, Заряд держит долго
-        </p>
-        <p><b>Недостатки:</b> <br />Плохая ремонтопригодность</p>
-      </div>
-
-
     </section>
   </main>
-  <hr />
   <footer class="footer wrapper">
     © ООО «<span class="footer__subtitle">Mirzov</span>Market», 2018-2022. Для
     уточнения информации звоните по номеру
