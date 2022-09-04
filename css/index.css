@@ -16,6 +16,7 @@ button {
   padding-left: 12px;
   padding-bottom: 8px;
   padding-right: 12px;
+  cursor: pointer;
 }
 
 ul {
@@ -23,26 +24,65 @@ ul {
   padding: 0;
 }
 
-
 li::marker {
   color: #888888;
   font-size: 35px;
-
 }
 
-.s {
+label {
+  user-select: none;
+}
+
+.flesh-dryve {
+  display: flex;
+  gap: 5px;
+}
+
+.custom-button {
+  border: 1px solid #888888;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.custom-button:hover {
+  cursor: pointer;
+  background-color: #dfdede;
+}
+
+.real-radio {
+  user-select: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+
+.real-radio:checked+.img-radio {
+  border-radius: 5px;
+  border: 1px solid rgb(199, 99, 245);
+}
+
+.real-radio:checked+.button-radio {
+  border-radius: 6px;
+  border: 1px solid rgb(199, 99, 245);
+}
+
+.selected__item {
   margin-top: 0;
   padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: #018ad2;
+  color: #008CF0;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #c00;
+  color: #a200ff;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -66,9 +106,9 @@ a:hover {
 .main__price {
   padding: 20px;
   background: #ffffff;
-  border: 1px solid #ffffff;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border: 1px solid #bebdbd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
   margin-bottom: 67px;
   display: flex;
   flex-direction: column;
@@ -101,10 +141,11 @@ a:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  color: #ffffff;
+  color: #f3eded;
   padding: 8px 10px;
-  background: rgb(197, 144, 240);
+  background: rgb(197, 158, 230);
   border-radius: 500px;
+  box-sizing: border-box;
 }
 
 .button__cart,
@@ -115,6 +156,15 @@ a:hover {
   background: rgb(222, 202, 238);
   border-radius: 4px;
   border: 0px;
+  cursor: pointer;
+}
+
+.button__cart:hover {
+  background: rgb(197, 144, 240);
+}
+
+.favorites__button:hover {
+  background: rgb(197, 144, 240);
 }
 
 .main__title {
@@ -162,13 +212,19 @@ iframe {
 
 .small-gallery {
   display: flex;
+  gap: 10px;
+
+}
+
+.small-img:hover {
+  background: #e4e2e2;
+  cursor: pointer;
 }
 
 .small-img {
   margin: 0;
   padding: 0;
-  margin-right: 10px;
-  border: 1px solid grey;
+  border: 1px solid #888888;
   border-radius: 4px;
   padding: 7px 23px;
 }
