@@ -36,17 +36,48 @@
     </div>
     <div class="main__content">
       <section>
-        <p class="s"><b>Цвет товара: голубой</b></p>
+        <p class="selected__item"><b>Цвет товара: голубой</b></p>
         <div class="small-gallery">
-          <figure class="small-img"><img src="./img/color-1.webp" alt="красный" height="60" /></figure>
-          <figure class="small-img"><img src="./img/color-2.webp" alt="темно-зеленый" height="60" /></figure>
-          <figure class="small-img"><img src="./img/color-3.webp" alt="розовый" height="60" /></figure>
-          <figure class="small-img"><img src="./img/color-4.webp" alt="синий" height="60" /></figure>
-          <figure class="small-img"><img src="./img/color-6.webp" alt="черный" height="60" /></figure>
-          <figure class="small-img"><img src="./img/color-5.webp" alt="белый" height="60" /></figure>
+          <input class="real-radio visually-hidden" type="radio" name="small-img" id="красный">
+          <label class="img-radio" for="красный">
+            <figure class="small-img"><img src="./img/color-1.webp" alt="красный" height="60" /></figure>
+          </label>
+          <input class="real-radio visually-hidden" type="radio" name="small-img" id="темно-зеленый">
+          <label class="img-radio" for="темно-зеленый">
+            <figure class="small-img"><img src="./img/color-2.webp" alt="темно-зеленый" height="60" /></figure>
+          </label>
+          <input class="real-radio visually-hidden" type="radio" name="small-img" id="розовый">
+          <label class="img-radio" for="розовый">
+            <figure class="small-img"><img src="./img/color-3.webp" alt="розовый" height="60" /></figure>
+          </label>
+          <input class="real-radio visually-hidden" type="radio" name="small-img" id="голубой">
+          <label class="img-radio" for="голубой">
+            <figure class="small-img"><img src="./img/image-3.webp" alt="голубой" height="60" /></figure>
+          </label>
+          <input class="real-radio visually-hidden" type="radio" name="small-img" id="черный">
+          <label class="img-radio" for="черный">
+            <figure class="small-img"><img src="./img/color-6.webp" alt="черный" height="60" /></figure>
+          </label>
+          <input class="real-radio visually-hidden" type="radio" name="small-img" id="белый">
+          <label class="img-radio" for="белый">
+            <figure class="small-img"><img src="./img/color-5.webp" alt="белый" height="60" /></figure>
+          </label>
         </div>
         <p><b>Конфигурация памяти: 128 ГБ</b></p>
-        <button>126 ГБ</button> <button>256 ГБ</button> <button>512 ГБ</button>
+        <div class="flesh-dryve">
+          <input class="real-radio" type="radio" name="configuration" id="128">
+          <label class="button-radio custom-button" for="128">
+            128 ГБ
+          </label>
+          <input class="real-radio" type="radio" name="configuration" id="256">
+          <label class="button-radio custom-button" for="256">
+            256 ГБ
+          </label>
+          <input class="real-radio" type="radio" name="configuration" id="512">
+          <label class="button-radio custom-button" for="512">
+            512 ГБ
+          </label>
+        </div>
         <h3>Характеристики товара</h3>
         <ul>
           <li>Экран:<b>6.1</b></li>
@@ -109,6 +140,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/GLlEfWNXJaM" allow="fullscreen"></iframe>
       </section>
     </div>
+    <!-- таблица -->
     <section>
       <h2>Cравнение моделей</h2>
       <table border="1">
@@ -158,6 +190,8 @@
         </tbody>
       </table>
     </section>
+    <!-- таблица -->
+    <!-- Отзывы -->
     <section class="reviews">
       <div class="reviews__title">
         <h2>Отзывы</h2>
@@ -202,6 +236,7 @@
           <p><b>Недостатки:</b> <br />Плохая ремонтопригодность</p>
         </div>
     </section>
+    <!-- Отзывы -->
   </main>
   <footer class="footer wrapper">
     © ООО «<span class="footer__subtitle">Mirzov</span>Market», 2018-2022. Для
