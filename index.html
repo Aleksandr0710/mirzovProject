@@ -37,34 +37,34 @@
     <div class="main__content">
       <section>
         <p class="selected__item"><b>Цвет товара: голубой</b></p>
-        <div class="small-gallery">
-          <input class="main__radio visually-hidden" type="radio" name="small-img" id="красный">
+        <div class="main__preview">
+          <input class="main__radio" type="radio" name="main__preview" id="красный">
           <label class="img-radio" for="красный">
             <img src="./img/color-1.webp" alt="красный" height="60" />
           </label>
-          <input class="main__radio visually-hidden" type="radio" name="small-img" id="темно-зеленый">
+          <input class="main__radio" type="radio" name="main__preview" id="темно-зеленый">
           <label class="img-radio" for="темно-зеленый">
             <img src="./img/color-2.webp" alt="темно-зеленый" height="60" />
           </label>
-          <input class="main__radio visually-hidden" type="radio" name="small-img" id="розовый">
+          <input class="main__radio" type="radio" name="main__preview" id="розовый">
           <label class="img-radio" for="розовый">
             <img src="./img/color-3.webp" alt="розовый" height="60" />
           </label>
-          <input class="main__radio visually-hidden" type="radio" name="small-img" id="голубой">
+          <input class="main__radio" type="radio" name="main__preview" id="голубой">
           <label class="img-radio" for="голубой">
             <img src="./img/image-3.webp" alt="голубой" height="60" />
           </label>
-          <input class="main__radio visually-hidden" type="radio" name="small-img" id="черный">
+          <input class="main__radio" type="radio" name="main__preview" id="черный">
           <label class="img-radio" for="черный">
             <img src="./img/color-6.webp" alt="черный" height="60" />
           </label>
-          <input class="main__radio visually-hidden" type="radio" name="small-img" id="белый">
+          <input class="main__radio" type="radio" name="main__preview" id="белый">
           <label class="img-radio" for="белый">
             <img src="./img/color-5.webp" alt="белый" height="60" />
           </label>
         </div>
         <p><b>Конфигурация памяти: 128 ГБ</b></p>
-        <div class="flesh-dryve">
+        <div class="main__configuration">
           <input class="main__radio" type="radio" name="configuration" id="128">
           <label class="button-radio custom-button" for="128">
             128 ГБ
@@ -135,7 +135,8 @@
           </p>
           <button class="button__cart">Добавить в корзину</button><button class="favorites__button">В избранное</button>
         </div>
-        <p class="ad">Реклама</p>
+
+        <p class="main__ad">Реклама</p>
         <iframe class="main__iframe" src="./ad.html" width="560" height="315"></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/GLlEfWNXJaM" allow="fullscreen"></iframe>
       </section>
@@ -143,49 +144,49 @@
     <!-- таблица -->
     <section>
       <h2>Cравнение моделей</h2>
-      <table border="1">
+      <table class="main__table">
         <thead>
           <tr>
-            <th>Модель</th>
-            <th>Вес</th>
-            <th>Высота</th>
-            <th>Ширина</th>
-            <th>Толщина</th>
-            <th>Чип</th>
-            <th>Объём памяти</th>
-            <th>Беспроводная зарядка</th>
-            <th>Аккумулятор</th>
+            <th class="table__title">Модель</th>
+            <th class="table__title">Вес</th>
+            <th class="table__title">Высота</th>
+            <th class="table__title">Ширина</th>
+            <th class="table__title">Толщина</th>
+            <th class="table__title">Чип</th>
+            <th class="table__title">Объём памяти</th>
+            <th class="table__title">Аккумулятор</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Iphone11</td>
-            <td>194 грамма</td>
-            <td>150.9 мм</td>
-            <td>75.7 мм</td>
-            <td>8.3 мм</td>
-            <td>A13 Bionicchip</td>
-            <td>до 128 Гб</td>
-            <td>Нет</td>
-            <td>До 17 часов</td>
+          <tr class="table-row">
+            <td class="table__info">Iphone 11</td>
+            <td class="table__info">194 грамма</td>
+            <td class="table__info">150.9 мм</td>
+            <td class="table__info">75.7 мм</td>
+            <td class="table__info">8.3 мм</td>
+            <td class="table__info">A13 Bionicchip</td>
+            <td class="table__info">до 128 Гб</td>
+            <td class="table__info">До 17 часов</td>
           </tr>
-          <tr>
-            <td>Iphone12</td>
-            <td>164 грамма</td>
-            <td rowspan="2">146.7 мм</td>
-            <td rowspan="2">71.5 мм</td>
-            <td>7.4 мм</td>
-            <td>A14 Bionicchip</td>
-            <td>до 256 Гб</td>
-            <td rowspan="2">Да</td>
-            <td rowspan="2">До 19 часов</td>
+          <tr class="table-row">
+            <td class="table__info">Iphone 12</td>
+            <td class="table__info">164 грамма</td>
+            <td class="table__info">146.7 мм</td>
+            <td class="table__info">71.5 мм</td>
+            <td class="table__info">7.4 мм</td>
+            <td class="table__info">A14 Bionicchip</td>
+            <td class="table__info">до 256 Гб</td>
+            <td class="table__info">До 19 часов</td>
           </tr>
-          <tr>
-            <td>Iphone13</td>
-            <td>174 грамма</td>
-            <td>7.65 мм</td>
-            <td>A15 Bionicchip</td>
-            <td>до 512 Гб</td>
+          <tr class="table-row">
+            <td class="table__info">Iphone 13</td>
+            <td class="table__info">174 грамма</td>
+            <td class="table__info">146.7 мм</td>
+            <td class="table__info">71.5 мм</td>
+            <td class="table__info">7.65 мм</td>
+            <td class="table__info">A15 Bionicchip</td>
+            <td class="table__info">до 512 Гб</td>
+            <td class="table__info">До 19 часов</td>
           </tr>
         </tbody>
       </table>
@@ -199,9 +200,9 @@
         </div>
         <button>оставить отзыв</button>
       </div>
-      <div class="reviews__item">
-        <img class="reviews__img" src="./img/review-1.jpeg" alt="Марк Г." height="200" />
-        <div class="reviews__text">
+      <div class="review__item">
+        <img class="review__avatar" src="./img/review-1.jpeg" alt="Марк Г." height="200" />
+        <div class="review__text">
           <b>Марк Г.</b>
           <div>
             <img src="./img/Звезда.png" alt="звездa" height="30" />
@@ -225,9 +226,9 @@
         </div>
       </div>
       <hr>
-      <div class="reviews__item">
-        <img class="reviews__img" src="./img/review-2.jpeg" alt="Валерий Коваленко" height="200" />
-        <div class="reviews__text">
+      <div class="review__item">
+        <img class="review__avatar" src="./img/review-2.jpeg" alt="Валерий Коваленко" height="200" />
+        <div class="review__text">
           <b>Валерий Коваленко</b>
           <div>
             <img src="./img/Звезда.png" alt="звездa" height="30" />
@@ -243,16 +244,19 @@
           </p>
           <p><b>Недостатки:</b> <br />Плохая ремонтопригодность</p>
         </div>
+      </div>
     </section>
     <!-- Отзывы -->
   </main>
-  <footer class="footer_wrapper">
-    © ООО «<span class="footer__subtitle">Mirzov</span>Market», 2018-2022. Для
-    уточнения информации звоните по номеру
-    <a href="tel:79000000000">+7 900 000 0000</a>, а предложения по
-    сотрудничеству отправляйте на почту
-    <a href="mailto:partner@mymarket.com">partner@mymarket.com</a>
-    <br /><a href="#"> в начало страницы </a>
+  <footer class="footer wrapper">
+    <div class="footer__info">
+      <span> <b> © ООО «<span class="footer__subtitle">Mirzov</span>Market» 2018-2022.</b></span>
+      <span> Для уточнения информации звоните по номеру <a href="tel:79000000000">+7 900 000 0000</a>,</span>
+      <span> а предложения посотрудничеству отправляйте на почту <a
+          href="mailto:partner@mymarket.com">partner@mymarket.com</a></span>
+    </div>
+
+    <a href="#"> в начало страницы </a>
   </footer>
 </body>
 

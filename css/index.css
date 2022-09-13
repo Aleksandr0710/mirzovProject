@@ -12,8 +12,6 @@ hr {
   margin: 40px 0 40px 0;
 }
 
-
-
 .header {
   max-height: 80px;
 }
@@ -109,7 +107,7 @@ li::marker {
 }
 
 
-.flesh-dryve {
+.main__configuration {
   display: flex;
   gap: 5px;
 }
@@ -129,7 +127,6 @@ li::marker {
 }
 
 a {
-
   color: #008CF0;
 }
 
@@ -146,7 +143,8 @@ a:hover {
   /* outline: 1px solid red; */
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  gap: 100px;
+  margin: 30px 0;
 }
 
 .main__price {
@@ -164,8 +162,8 @@ a:hover {
   /* outline: 1px solid green; */
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
 }
+
 
 .price__old,
 .price__new {
@@ -235,10 +233,35 @@ a:hover {
   gap: 10px;
 }
 
-.small-gallery {
+.main__preview {
   display: flex;
   gap: 10px;
+}
 
+.main__table {
+
+  border-collapse: collapse;
+  border: 1px solid #888888;
+}
+
+.table__title {
+  border: 1px solid #888888;
+  padding: 10px;
+}
+
+.table__info {
+  border-right: 1px solid #888888;
+  padding: 10px;
+}
+
+.table-row:hover {
+  cursor: pointer;
+  background: rgb(222, 202, 238);
+}
+
+.reviews {
+  margin-top: 50px;
+  width: 741px;
 }
 
 .reviews__title {
@@ -247,9 +270,10 @@ a:hover {
   margin-bottom: 25px;
 }
 
-.reviews__item {
+.review__item {
   display: flex;
   padding-top: 10px;
+  margin-bottom: 40px;
 }
 
 .reviews__subtitle {
@@ -258,7 +282,7 @@ a:hover {
   gap: 5px;
 }
 
-.reviews__text {
+.review__text {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
@@ -268,14 +292,22 @@ a:hover {
   color: #aaaaaa;
 }
 
-.reviews__img {
+.review__avatar {
   border-radius: 100px;
 }
 
-.ad {
+.main__ad {
   color: #888888;
 }
 
-.footer_wrapper {
-  margin-top: 40px;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
 }
