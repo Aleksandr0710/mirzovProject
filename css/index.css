@@ -3,7 +3,7 @@
   box-sizing: border-box;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 19.36px;
   text-decoration: none;
 }
@@ -159,6 +159,7 @@ a:hover {
 }
 
 .main__sidebar {
+  width: 420px;
   /* outline: 1px solid green; */
   display: flex;
   flex-direction: column;
@@ -239,19 +240,13 @@ a:hover {
 }
 
 .main__table {
-
   border-collapse: collapse;
   border: 1px solid #888888;
 }
 
-.table__title {
+.table__title, .table__info  {
   border: 1px solid #888888;
-  padding: 10px;
-}
-
-.table__info {
-  border-right: 1px solid #888888;
-  padding: 10px;
+  padding: 9px;
 }
 
 .table-row:hover {
@@ -260,8 +255,7 @@ a:hover {
 }
 
 .reviews {
-  margin-top: 50px;
-  width: 741px;
+  width: 880px;
 }
 
 .reviews__title {
