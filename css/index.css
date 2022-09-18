@@ -8,8 +8,34 @@
   text-decoration: none;
 }
 
-hr {
-  margin: 40px 0 40px 0;
+.wrapper {
+  /* outline: 1px dashed rgb(121, 238, 25); */
+  width: 1500px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.label {
+  user-select: none;
+}
+
+.list {
+  margin-left: 35px;
+  padding: 0;
+}
+
+.list__item::marker {
+  color: #888888;
+  font-size: 35px;
+}
+
+.a {
+  color: #008CF0;
+}
+
+.a:hover {
+  color: #a200ff;
+  cursor: pointer;
 }
 
 .header {
@@ -33,22 +59,29 @@ hr {
   color: rgb(121, 126, 204);
 }
 
-.header__subtitle {
-  margin-left: 10px;
+.main__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 8px;
+  margin-bottom: 30px;
 }
 
-.wrapper {
-  /* outline: 1px dashed rgb(121, 238, 25); */
-  width: 1500px;
-  margin: 0 auto;
-  padding: 0 50px;
+.main__container {
+  /* outline: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 30px 0;
 }
 
-img {
-  max-width: 100%;
+.gallery {
+  display: flex;
+  gap: 10px;
 }
 
-.img-radio {
+.preview__img-radio {
   border: 1px solid #888888;
   border-radius: 4px;
   width: 80px;
@@ -59,30 +92,18 @@ img {
   cursor: pointer;
 }
 
-.img-radio:hover {
+.preview__img-radio:hover {
   background: rgb(214, 212, 212);
 }
 
-.main__radio:checked+.img-radio {
+.radio:checked+.preview__img-radio {
   border-radius: 5px;
   border: 3px solid rgb(199, 99, 245);
 }
 
-.main__radio:checked+.button-radio {
+.radio:checked+.configuration__button-radio {
   border-radius: 6px;
   border: 3px solid rgb(199, 99, 245);
-}
-
-label {
-  user-select: none;
-}
-
-button {
-  padding-top: 8px;
-  padding-left: 12px;
-  padding-bottom: 8px;
-  padding-right: 12px;
-  cursor: pointer;
 }
 
 .custom-button {
@@ -96,23 +117,12 @@ button {
   background-color: #dfdede;
 }
 
-ul {
-  margin-left: 35px;
-  padding: 0;
-}
-
-li::marker {
-  color: #888888;
-  font-size: 35px;
-}
-
-
-.main__configuration {
+.configuration {
   display: flex;
   gap: 5px;
 }
 
-.main__radio {
+.radio {
   user-select: none;
   width: 0;
   height: 0;
@@ -121,33 +131,16 @@ li::marker {
   z-index: -1;
 }
 
-.selected__item {
+.gallery__selected-item {
   margin-top: 0;
   padding: 0;
 }
 
-a {
-  color: #008CF0;
-}
-
-a:hover {
-  color: #a200ff;
-  cursor: pointer;
-}
-
-.main__nav {
+.breadcrumbs {
   padding-top: 29px;
 }
 
-.main__content {
-  /* outline: 1px solid red; */
-  display: flex;
-  justify-content: space-between;
-  gap: 100px;
-  margin: 30px 0;
-}
-
-.main__price {
+.sidebar__container {
   padding: 20px;
   background: #ffffff;
   border: 1px solid #bebdbd;
@@ -158,33 +151,32 @@ a:hover {
   flex-direction: column;
 }
 
-.main__sidebar {
+.sidebar {
   width: 420px;
   /* outline: 1px solid green; */
   display: flex;
   flex-direction: column;
 }
 
-
-.price__old,
-.price__new {
+.sidebar__price,
+.sidebar__price-new {
   font-style: normal;
   font-weight: 500;
-
 }
 
-.price__old {
+.sidebar__price {
   font-size: 16px;
   line-height: 16px;
   color: #888888;
+  text-decoration: line-through;
 }
 
-.price__new {
+.sidebar__price-new {
   font-size: 32px;
   line-height: 39px;
 }
 
-.Discount {
+.sidebar__discount {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -196,8 +188,7 @@ a:hover {
   box-sizing: border-box;
 }
 
-.button__cart,
-.favorites__button {
+.sidebar__button {
   margin-bottom: 20px;
   padding: 20px 49px;
   height: 64px;
@@ -207,49 +198,37 @@ a:hover {
   cursor: pointer;
 }
 
-.button__cart:hover {
+
+.sidebar__button:hover {
   background: rgb(197, 144, 240);
 }
 
-.favorites__button:hover {
-  background: rgb(197, 144, 240);
+.ad {
+  color: #888888;
 }
 
-.main__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  margin-top: 8px;
-  margin-bottom: 30px;
-}
-
-.main__iframe {
+.iframe {
   border: 1px solid #ccc;
   margin-bottom: 15px;
 }
 
-.main__gallery {
+.preview {
   display: flex;
   gap: 10px;
 }
 
-.main__preview {
-  display: flex;
-  gap: 10px;
-}
-
-.main__table {
+.table {
   border-collapse: collapse;
   border: 1px solid #888888;
 }
 
-.table__title, .table__info  {
+.table__title,
+.table__info {
   border: 1px solid #888888;
   padding: 9px;
 }
 
-.table-row:hover {
+.table__row:hover {
   cursor: pointer;
   background: rgb(222, 202, 238);
 }
@@ -258,28 +237,30 @@ a:hover {
   width: 880px;
 }
 
-.reviews__title {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-}
-
 .review__item {
   display: flex;
-  padding-top: 10px;
-  margin-bottom: 40px;
 }
 
-.reviews__subtitle {
+.reviews__title {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
+
 .review__text {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+}
+
+.review__item {
+  padding: 25px 0;
+  border-bottom: 1px dashed grey
+}
+
+.review__item--last {
+  border-bottom: none;
 }
 
 .reviews__count {
@@ -290,15 +271,73 @@ a:hover {
   border-radius: 100px;
 }
 
-.main__ad {
-  color: #888888;
+.form {
+  padding: 20px;
+  background: rgb(222, 202, 238);
+  border: 1px solid #bebdbd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  margin-left: 180px;
+  user-select: none;
+}
+
+.form__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.form__name {
+  padding: 15px 20px;
+  width: 370px;
+  height: 49px;
+}
+
+.form__appraisement {
+  padding: 15px 20px;
+  width: 250px;
+}
+
+.form__text {
+  padding: 15px 20px;
+  width: 661px;
+  height: 190px;
+  margin: 30px 0;
+  resize: none;
+}
+
+.form__button {
+  padding: 10px 20px;
+  background: rgb(215, 176, 247);
+  border-radius: 4px;
+  border: 1px solid rgb(205, 147, 252);
+}
+
+.form input,
+.form textarea {
+  border: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+  background-color: white;
+  box-shadow: 0 0 0 4px #c4c1c1 inset;
+  outline: 0;
+}
+
+.form__button:hover {
+  background: rgb(197, 144, 240);
+  cursor: pointer;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 30px 50px;
+  margin-top: 100px;
   align-items: center;
+  background-color: #f1dbfd;
 }
 
 .footer__info {
