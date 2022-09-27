@@ -40,42 +40,42 @@
         <p class="gallery__selected-item"><b>Цвет товара: голубой</b></p>
         <div class="preview">
           <input class="preview__radio radio" type="radio" name="preview" id="красный">
-          <label class="preview__img-radio label" for="красный">
+          <label class="preview__img-radio " for="красный">
             <img src="./img/color-1.webp" alt="красный" height="60" />
           </label>
           <input class="preview__radio radio" type="radio" name="preview" id="темно-зеленый">
-          <label class="preview__img-radio label" for="темно-зеленый">
+          <label class="preview__img-radio" for="темно-зеленый">
             <img src="./img/color-2.webp" alt="темно-зеленый" height="60" />
           </label>
           <input class="preview__radio radio" type="radio" name="preview" id="розовый">
-          <label class="preview__img-radio label" for="розовый">
+          <label class="preview__img-radio" for="розовый">
             <img src="./img/color-3.webp" alt="розовый" height="60" />
           </label>
           <input class="preview__radio radio" type="radio" name="preview" id="голубой">
-          <label class="preview__img-radio label" for="голубой">
+          <label class="preview__img-radio" for="голубой">
             <img src="./img/image-3.webp" alt="голубой" height="60" />
           </label>
           <input class="preview__radio radio" type="radio" name="preview" id="черный">
-          <label class="preview__img-radio label" for="черный">
+          <label class="preview__img-radio" for="черный">
             <img src="./img/color-6.webp" alt="черный" height="60" />
           </label>
           <input class="preview__radio radio" type="radio" name="preview" id="белый">
-          <label class="preview__img-radio label" for="белый">
+          <label class="preview__img-radio" for="белый">
             <img src="./img/color-5.webp" alt="белый" height="60" />
           </label>
         </div>
         <p><b>Конфигурация памяти: 128 ГБ</b></p>
         <div class="configuration">
           <input class="configuration__radio radio" type="radio" name="configuration" id="128">
-          <label class="configuration__button-radio custom-button label" for="128">
+          <label class="configuration__button-radio" for="128">
             128 ГБ
           </label>
           <input class="configuration__radio radio" type="radio" name="configuration" id="256">
-          <label class="configuration__button-radio custom-button label" for="256">
+          <label class="configuration__button-radio" for="256">
             256 ГБ
           </label>
           <input class="configuration__radio radio" type="radio" name="configuration" id="512">
-          <label class="configuration__button-radio custom-button label" for="512">
+          <label class="configuration__button-radio" for="512">
             512 ГБ
           </label>
         </div>
@@ -123,7 +123,7 @@
           кино.
         </p>
 
-        <h2>Cравнение моделей</h2>
+        <h2 class="compare-title">Cравнение моделей</h2>
         <table class="table">
           <thead>
             <tr>
@@ -174,7 +174,20 @@
       </section>
       <section class="sidebar">
         <div class="sidebar__container">
-          <p><span class="sidebar__price">75 990₽</span> <span class="sidebar__discount">8%</span></p>
+          <p class="sidebar__inner">
+            <span>
+              <span class="sidebar__price">75 990₽</span>
+              <span class="sidebar__discount">8%</span>
+            </span>
+            <input class=" sidebar__radio radio" type="radio" id="heart">
+            <label class="s" for="heart">
+              <svg class="sidebar__svg" width="35" height="35" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path  fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.30838 10.9545C10.2979 7.12455 16.7444 7.12455 20.7339 10.9545L25.0002 15.0503L29.2667 10.9545C33.2563 7.12455 39.7027 7.12455 43.6923 10.9545C47.6817 14.7844 47.6817 20.973 43.6923 24.803L25.0002 42.7472L6.30838 24.803C2.31888 20.973 2.31888 14.7844 6.30838 10.9545ZM17.7876 13.7829C15.4253 11.5151 11.617 11.5151 9.25465 13.7829C6.89234 16.0507 6.89234 19.7067 9.25465 21.9746L25.0002 37.0904L40.746 21.9746C43.1083 19.7067 43.1083 16.0507 40.746 13.7829C38.3838 11.5151 34.5754 11.5151 32.2131 13.7829L25.0002 20.7072L17.7876 13.7829Z"
+                  fill="grey" />
+              </svg>
+            </label>
+          </p>
           <span class="sidebar__price-new">67 990₽</span>
           <p>
             Самовывоз в четверг, 1 сентября — <b>бесплатно</b>
@@ -182,8 +195,8 @@
             Курьером в четверг, 1 сентября — <b>бесплатно</b>
           </p>
           <button class="sidebar__button">Добавить в корзину</button>
-          <button class="sidebar__button">В избранное</button>
         </div>
+
         <p class="ad">Реклама</p>
         <iframe class="iframe" src="./ad.html" width="420" height="315"></iframe>
         <iframe width="420" height="315" src="https://www.youtube.com/embed/GLlEfWNXJaM" allow="fullscreen"></iframe>
@@ -198,8 +211,8 @@
         <img class="review__avatar" src="./img/review-1.jpeg" alt="Марк Г." height="200" />
         <div class="review__text">
           <b>Марк Г.</b>
-          <div>
-            <img src="./img/Звезда.png" alt="звездa" height="30" />
+          <div class="review__stars">
+            <img class="review__stars" src="./img/Звезда.png" alt="звездa" height="30" />
             <img src="./img/Звезда.png" alt="звездa" height="30" />
             <img src="./img/Звезда.png" alt="звездa" height="30" />
             <img src="./img/Звезда.png" alt="звездa" height="30" />
@@ -218,13 +231,12 @@
             фотографий
           </p>
         </div>
-
       </div>
       <div class="review__item review__item--last">
         <img class="review__avatar" src="./img/review-2.jpeg" alt="Валерий Коваленко" height="200" />
         <div class="review__text">
           <b>Валерий Коваленко</b>
-          <div>
+          <div class="review__stars">
             <img src="./img/Звезда.png" alt="звездa" height="30" />
             <img src="./img/Звезда.png" alt="звездa" height="30" />
             <img src="./img/Звезда.png" alt="звездa" height="30" />
