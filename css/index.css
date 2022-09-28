@@ -6,7 +6,6 @@
   font-size: 16px;
   line-height: 19.36px;
   text-decoration: none;
-  user-select: none;
 }
 
 .wrapper {
@@ -16,10 +15,11 @@
   padding: 0 50px;
 }
 
-@media (max-width: 1024px) {
+
+@media (min-width: 1024px) and (max-width: 1499px) {
   .wrapper {
-    width: 1024px;
     padding: 0 15px;
+    width: 1024px;
   }
 }
 
@@ -47,7 +47,8 @@
 }
 
 .header {
-  max-height: 80px;
+  width: 100%;
+  background-color: #efdff8;
 }
 
 .header__title {
@@ -55,8 +56,6 @@
 }
 
 .header__logo {
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
 }
@@ -65,6 +64,11 @@
 .footer__subtitle {
   font-size: inherit;
   color: rgb(121, 126, 204);
+}
+
+.main {
+  padding-bottom: 100px;
+  background: rgb(243, 240, 240);
 }
 
 .main__title {
@@ -84,20 +88,21 @@
   margin-top: 30px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
   .main__container {
     gap: 40px;
   }
 }
 
 .gallery {
+  width: 100%;
   display: flex;
   gap: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
   .gallery img {
-    height: 272px;
+    max-height: 272px;
   }
 }
 
@@ -285,6 +290,14 @@
   border-collapse: collapse;
 }
 
+@media (min-width: 1024px) and (max-width: 1499px) {
+
+  .table,
+  .compare-title {
+    display: none;
+  }
+}
+
 .table__title,
 .table__info {
   border: 1px solid #888888;
@@ -296,26 +309,20 @@
   background: rgb(222, 202, 238);
 }
 
-@media (max-width: 1024px) {
 
-  .table,
-  .compare-title {
-    display: none;
-  }
-}
 
 .reviews {
   width: 880px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
   .review__avatar {
     height: 100px;
   }
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
   .review__stars img {
     height: 20px;
   }
@@ -363,10 +370,10 @@
   border-radius: 30px;
   margin-left: 180px;
   user-select: none;
-  width: 700px
+  width: 700px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
   .form {
     margin-left: 0;
   }
@@ -427,12 +434,16 @@
 }
 
 .footer {
+  width: 100%;
+  background-color: #efdff8;
+}
+
+.footer__container {
   display: flex;
   justify-content: space-between;
   padding: 30px 50px;
-  margin-top: 100px;
   align-items: center;
-  background-color: #f1dbfd;
+
 }
 
 .footer__info {
