@@ -71,6 +71,27 @@
   align-items: center;
 }
 
+.header__widgets {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__heart {
+  display: flex;
+  position: relative;
+  right: 100px;
+}
+
+.header__f {
+  font-weight: 500;
+  color: #f3eded;
+  padding: 5px 10px;
+  background: rgb(197, 158, 230);
+  border-radius: 200px;
+  left: 48px;
+  position: absolute;
+}
+
 .header__cart {
   display: flex;
   position: relative;
