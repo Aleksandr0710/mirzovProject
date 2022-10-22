@@ -8,8 +8,9 @@ function isEmpty(obj) {
     let values = Object.values(obj);
     if (!values.length) {
       return true;
-    } 
-   
+    } else {
+      return false;
+    }
   }
 }
 console.log(isEmpty(user));
