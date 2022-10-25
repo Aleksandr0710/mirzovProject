@@ -1,19 +1,17 @@
 "use strict";
 // упражнение 1
 
-let user = {};
+let user = {
+  // g: "f",
+};
 
-function isEmpty(obj) {
-  if (obj) {
-    let values = Object.values(obj);
-    if (!values.length) {
-      return true;
-    } else {
-      return false;
-    }
+function isEmpty(Object) {
+  for (let key in Object) {
+    return true;
   }
+  return false;
 }
-console.log(isEmpty(user));
+console.log(isEmpty(1231423542345342));
 
 // упражнение 2
 

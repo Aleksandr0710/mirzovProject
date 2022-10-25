@@ -30,11 +30,24 @@ iPhone 13 - сильный мира всего.
   price: "67 990₽",
   old_price: "75 990₽",
   discount: "8000₽",
+  links: [
+    "./img/image-2.webp",
+    "./img/image-5.webp",
+    "./img/image-3.webp",
+    "./img/image-4.webp",
+    "./img/image-1.webp",
+  ],
+  Colors: ["красный", "темно-зеленый", "розовый", "голубой", "черный", "белый"],
+  memorys: ["128 гб", "256 гб", "512 гб"],
+  delivery: [
+    { type: "Самовывоз", date: "четверг, 1 сентября", cost: 0 },
+    { type: "курьером", date: "четверг, 1 сентября", cost: 0 },
+  ],
 };
 
 let user1 = {
   name: "Марк Г.",
-  avatar: "",
+  avatar: "./img/review-1.jpeg",
   rating: "5",
   text: `Достоинства:
 это мой первый айфон после огромного количества телефонов на андроиде.
@@ -47,7 +60,7 @@ let user1 = {
 
 let user2 = {
   name: "Валерий Коваленко",
-  avatar: "",
+  avatar: "./img/review-2.jpeg",
   rating: "4",
   text: `Достоинства:
 OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго
