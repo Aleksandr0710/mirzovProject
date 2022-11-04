@@ -425,10 +425,29 @@
 }
 
 .form__inner {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 40px;
+}
+
+.error {
+  color: #efdff8;
+  margin: 49px;
+  background: rgb(98, 29, 128);
+  padding: 10px;
+  position: absolute;
+  width: 250px;
+  display: none;
+}
+
+.errorName {
+  left: -50px;
+}
+
+.errorAppraisement {
+  left: 357px;
 }
 
 .form__name {
@@ -439,14 +458,13 @@
 
 .form__appraisement {
   padding: 15px 20px;
-  width: 250px;
 }
 
 .form__text {
   padding: 15px 20px;
   width: 661px;
   height: 190px;
-  margin: 30px 0;
+  margin: 40px 0;
   resize: none;
 }
 

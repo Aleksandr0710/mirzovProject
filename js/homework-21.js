@@ -11,7 +11,7 @@ function isEmpty(Object) {
   }
   return false;
 }
-console.log(isEmpty(1231423542345342));
+console.log(isEmpty(user));
 
 // упражнение 2
 
@@ -23,7 +23,7 @@ let salaries = {
   John: 100000,
   Ann: 160000,
   Pete: 130000,
-  sasha: 1000000000909.324,
+  Sasha: 1000000000909.324,
 };
 
 /**
