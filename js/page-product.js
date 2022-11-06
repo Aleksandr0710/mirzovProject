@@ -3,6 +3,8 @@ const form = document.querySelector(".form");
 const formInner = form.querySelector(".form__inner");
 const formName = form.querySelector(".form__name");
 const formAppraisement = form.querySelector(".form__appraisement");
+const formText = form.querySelector(".form__text");
+const formBtn = form.querySelector(".form__button");
 
 const createElement = (text, tag, className, mix) => {
   const element = document.createElement(tag);
@@ -12,12 +14,14 @@ const createElement = (text, tag, className, mix) => {
   formInner.append(element);
   return element;
 };
+
 const errorName1 = createElement(
   "вы не указали имя и фамилию",
   "div",
   "error",
   "errorName"
 );
+
 const errorName2 = createElement(
   "Имя не может быть короче 2-х символов",
   "div",
@@ -31,6 +35,7 @@ const errorAppraisement1 = createElement(
   "error",
   "errorAppraisement"
 );
+
 const errorAppraisement2 = createElement(
   "Оценка должна содержать цифры",
   "div",
@@ -54,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (isNaN(formAppraisement.value)) {
       errorAppraisement2.style.display = "block";
     }
+    localStorage.clear();
   });
 });
 
@@ -65,3 +71,17 @@ formAppraisement.onfocus = () => {
   errorAppraisement1.style.display = "none";
   errorAppraisement2.style.display = "none";
 };
+
+form.addEventListener("input", () => {
+  localStorage.setItem("name", formName.value);
+  localStorage.setItem("appraisement", formAppraisement.value);
+  localStorage.setItem("text", formText.value);
+});
+
+const checkStorage = () => {
+  formName.value = localStorage.getItem("name");
+  formAppraisement.value = localStorage.getItem("appraisement");
+  formText.value = localStorage.getItem("text");
+};
+
+checkStorage();
