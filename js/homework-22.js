@@ -36,7 +36,7 @@ function addCart(id) {
 addCart(4545);
 
 function delCart(id) {
-  let newCart = cart.filter(el => el !== id);
+  let newCart = cart.filter((el) => el !== id);
   return newCart;
 }
 console.log(delCart(6666));
