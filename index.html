@@ -23,11 +23,11 @@
       <span class="header__widgets">
         <span class="header__heart">
           <img src="./img/heart.svg" alt="избранное">
-          <span class="header__f">108</span>
+          <span class="header__f">0</span>
         </span>
         <span class="header__cart">
           <img src="./img/cart-cat.png" alt="корзина с товаром" height="50">
-          <span class="header__count">6</span>
+          <span class="header__count">0</span>
         </span>
       </span>
     </section>
@@ -51,6 +51,7 @@
       </div>
       <div class="main__container">
         <section>
+          <h3>Характеристики товара:</h3>
           <p class="gallery__selected-item"><b>Цвет товара: голубой</b></p>
           <div class="preview">
             <input class="preview__radio radio" type="radio" name="preview" id="красный">
@@ -65,7 +66,7 @@
             <label class="preview__img-radio" for="розовый">
               <img src="./img/color3.png" alt="розовый" height="60" />
             </label>
-            <input class="preview__radio radio" type="radio" name="preview" id="голубой">
+            <input class="preview__radio radio" type="radio" name="preview" id="голубой" checked>
             <label class="preview__img-radio" for="голубой">
               <img src="./img/image-3.webp" alt="голубой" height="60" />
             </label>
@@ -78,25 +79,23 @@
               <img src="./img/color5.png" alt="белый" height="60" />
             </label>
           </div>
-          <p><b>Конфигурация памяти: 128 ГБ</b></p>
+          <p class="configurationMemory">Конфигурация памяти: 128 ГБ</p>
           <div class="configuration">
-            <input class="configuration__radio radio" type="radio" name="configuration" id="128">
+            <input class="configuration__radio radio 128" type="radio" name="configuration" id="128" checked>
             <label class="configuration__button-radio" for="128">
               128 ГБ
             </label>
-            <input class="configuration__radio radio" type="radio" name="configuration" id="256">
+            <input class="configuration__radio radio 256" type="radio" name="configuration" id="256">
             <label class="configuration__button-radio" for="256">
               256 ГБ
             </label>
-            <input class="configuration__radio radio" type="radio" name="configuration" id="512">
+            <input class="configuration__radio radio 512" type="radio" name="configuration" id="512">
             <label class="configuration__button-radio" for="512">
               512 ГБ
             </label>
           </div>
-          <h3>Характеристики товара</h3>
           <ul class="list">
             <li class="list__item">Экран:<b>6.1</b></li>
-            <li class="list__item">Встроенная память:<b>128 ГБ</b></li>
             <li class="list__item">Операционная система:<b>iOS 15</b></li>
             <li class="list__item">Беспроводные интерфейсы:<b>NFC, Bluetooth, Wi-Fi</b></li>
             <li class="list__item">Процессор: <a class="list__more a" href="https://ru.wikipedia.org/wiki/Apple_A15"

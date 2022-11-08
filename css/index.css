@@ -53,6 +53,7 @@
   top: 0;
   z-index: 4;
   width: 100%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .header__inner {
@@ -198,6 +199,10 @@
   border: 3px solid rgb(98, 2, 128)
 }
 
+.configurationMemory {
+  font-weight: bold;
+}
+
 .configuration {
   display: flex;
   gap: 5px;
@@ -301,13 +306,37 @@
 .sidebar__button::before {
   position: absolute;
   content: '';
-  background-image: url(../img/cart.svg);
+  background-image: url(../img/bag-add-outline.svg);
   background-size: cover;
   width: 25px;
   height: 25px;
   top: 17px;
-  left: 85px;
+  left: 75px;
 }
+
+.sidebar__button--disabled {
+  background: rgb(87, 84, 84);
+  color: white;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px 49px;
+  height: 64px;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.sidebar__button--disabled::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/bag-check-outline.svg);
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  top: 17px;
+  left: 75px;
+}
+
 
 .sidebar__button:hover {
   background: rgb(197, 144, 240);
@@ -315,6 +344,14 @@
 
 .sidebar__button:active {
   background: rgb(98, 2, 128);
+}
+
+.sidebar__button:hover.sidebar__button--disabled {
+  background: rgb(58, 52, 52);
+}
+
+.sidebar__button:active.sidebar__button--disabled {
+  background: rgb(119, 112, 112);
 }
 
 .ad {

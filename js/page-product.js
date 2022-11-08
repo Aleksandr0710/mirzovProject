@@ -1,4 +1,60 @@
 "use strict";
+
+const Button1 = document.getElementById("128");
+const Button2 = document.getElementById("256");
+const Button3 = document.getElementById("512");
+const configurationMemory = document.querySelector(".configurationMemory");
+const sidebarPrice = document.querySelector(".sidebar__price");
+const sidebarPriceNew = document.querySelector(".sidebar__price-new");
+const sidebarButton = document.querySelector(".sidebar__button");
+const headerCount = document.querySelector(".header__count");
+
+Button1.addEventListener("click", () => {
+  configurationMemory.innerHTML = "Конфигурация памяти: 128 гб ";
+  sidebarPrice.innerHTML = "75 990₽";
+  sidebarPriceNew.innerHTML = "67 990₽";
+});
+Button2.addEventListener("click", () => {
+  configurationMemory.innerHTML = "Конфигурация памяти: 256 гб ";
+  sidebarPrice.innerHTML = "85 990₽";
+  sidebarPriceNew.innerHTML = "79 190₽";
+});
+Button3.addEventListener("click", () => {
+  configurationMemory.innerHTML = "Конфигурация памяти: 512 гб ";
+  sidebarPrice.innerHTML = "99 999₽";
+  sidebarPriceNew.innerHTML = "91 999₽";
+});
+
+let cartCount = {
+  count: 0,
+};
+
+if (JSON.parse(localStorage.getItem("id"))) {
+  cartCount = JSON.parse(localStorage.getItem("id"));
+}
+headerCount.innerHTML = cartCount.count;
+
+if (headerCount.innerHTML == 1) {
+  sidebarButton.classList.add("sidebar__button--disabled");
+  sidebarButton.innerHTML = "Товар уже в корзине";
+}
+sidebarButton.addEventListener("click", () => {
+  sidebarButton.classList.toggle("sidebar__button--disabled");
+  if (sidebarButton.classList.contains("sidebar__button--disabled")) {
+    sidebarButton.innerHTML = "Товар уже в корзине";
+    ++cartCount.count;
+    localStorage.setItem("id", JSON.stringify(cartCount));
+    cartCount = JSON.parse(localStorage.getItem("id"));
+    headerCount.innerHTML = cartCount.count;
+  } else {
+    sidebarButton.innerHTML = "Добавить в корзину";
+    --cartCount.count;
+    localStorage.setItem("id", JSON.stringify(cartCount));
+    cartCount = JSON.parse(localStorage.getItem("id"));
+    headerCount.innerHTML = cartCount.count;
+  }
+});
+
 const form = document.querySelector(".form");
 const formInner = form.querySelector(".form__inner");
 const formName = form.querySelector(".form__name");
@@ -59,7 +115,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (isNaN(formAppraisement.value)) {
       errorAppraisement2.style.display = "block";
     }
-    localStorage.clear();
+    localStorage.removeItem("name");
+    localStorage.removeItem("appraisement");
+    localStorage.removeItem("text");
   });
 });
 
