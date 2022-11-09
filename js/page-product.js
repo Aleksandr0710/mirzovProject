@@ -7,7 +7,10 @@ const configurationMemory = document.querySelector(".configurationMemory");
 const sidebarPrice = document.querySelector(".sidebar__price");
 const sidebarPriceNew = document.querySelector(".sidebar__price-new");
 const sidebarButton = document.querySelector(".sidebar__button");
-const headerCount = document.querySelector(".header__count");
+const headerCountCart = document.querySelector(".header__count-cart");
+const headerCountHeart = document.querySelector(".header__count-heart");
+const sidebarHeart = document.querySelector(".sidebar__heart");
+const sidebarHeartSvg = document.querySelector(".sidebar__heart-svg");
 
 Button1.addEventListener("click", () => {
   configurationMemory.innerHTML = "Конфигурация памяти: 128 гб ";
@@ -25,16 +28,43 @@ Button3.addEventListener("click", () => {
   sidebarPriceNew.innerHTML = "91 999₽";
 });
 
+let heartCount = {
+  count: 0,
+};
+
+if (JSON.parse(localStorage.getItem("heart"))) {
+  heartCount = JSON.parse(localStorage.getItem("heart"));
+}
+headerCountHeart.innerHTML = heartCount.count;
+
+if (headerCountHeart.innerHTML == 1) {
+  sidebarHeartSvg.classList.add("sidebar__heart-svg--disabled");
+}
+sidebarHeart.addEventListener("click", () => {
+  sidebarHeartSvg.classList.toggle("sidebar__heart-svg--disabled");
+  if (sidebarHeartSvg.classList.contains("sidebar__heart-svg--disabled")) {
+    ++heartCount.count;
+    localStorage.setItem("heart", JSON.stringify(heartCount));
+    heartCount = JSON.parse(localStorage.getItem("heart"));
+    headerCountHeart.innerHTML = heartCount.count;
+  } else {
+    --heartCount.count;
+    localStorage.setItem("heart", JSON.stringify(heartCount));
+    heartCount = JSON.parse(localStorage.getItem("heart"));
+    headerCountHeart.innerHTML = heartCount.count;
+  }
+});
+
 let cartCount = {
   count: 0,
 };
 
-if (JSON.parse(localStorage.getItem("id"))) {
-  cartCount = JSON.parse(localStorage.getItem("id"));
+if (JSON.parse(localStorage.getItem("cart"))) {
+  cartCount = JSON.parse(localStorage.getItem("cart"));
 }
-headerCount.innerHTML = cartCount.count;
+headerCountCart.innerHTML = cartCount.count;
 
-if (headerCount.innerHTML == 1) {
+if (headerCountCart.innerHTML == 1) {
   sidebarButton.classList.add("sidebar__button--disabled");
   sidebarButton.innerHTML = "Товар уже в корзине";
 }
@@ -43,15 +73,15 @@ sidebarButton.addEventListener("click", () => {
   if (sidebarButton.classList.contains("sidebar__button--disabled")) {
     sidebarButton.innerHTML = "Товар уже в корзине";
     ++cartCount.count;
-    localStorage.setItem("id", JSON.stringify(cartCount));
-    cartCount = JSON.parse(localStorage.getItem("id"));
-    headerCount.innerHTML = cartCount.count;
+    localStorage.setItem("cart", JSON.stringify(cartCount));
+    cartCount = JSON.parse(localStorage.getItem("cart"));
+    headerCountCart.innerHTML = cartCount.count;
   } else {
     sidebarButton.innerHTML = "Добавить в корзину";
     --cartCount.count;
-    localStorage.setItem("id", JSON.stringify(cartCount));
-    cartCount = JSON.parse(localStorage.getItem("id"));
-    headerCount.innerHTML = cartCount.count;
+    localStorage.setItem("cart", JSON.stringify(cartCount));
+    cartCount = JSON.parse(localStorage.getItem("cart"));
+    headerCountCart.innerHTML = cartCount.count;
   }
 });
 

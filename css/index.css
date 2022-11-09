@@ -83,7 +83,7 @@
   right: 100px;
 }
 
-.header__f {
+.header__count-heart {
   font-weight: 500;
   color: #f3eded;
   padding: 5px 10px;
@@ -99,7 +99,7 @@
   right: 50px;
 }
 
-.header__count {
+.header__count-cart {
   left: 50px;
   position: absolute;
   font-weight: 500;
@@ -243,6 +243,10 @@
   justify-content: space-between;
 }
 
+.sidebar__info {
+  user-select: none;
+}
+
 .sidebar {
   width: 420px;
   /* outline: 1px solid green; */
@@ -266,6 +270,7 @@
 .sidebar__price-new {
   font-size: 32px;
   line-height: 39px;
+  user-select: none;
 }
 
 .sidebar__discount {
@@ -276,19 +281,23 @@
   border-radius: 500px;
 }
 
-.sidebar__svg:hover {
+.sidebar__heart-svg path {
+  fill: grey;
+}
+
+.sidebar__heart-svg:hover {
   cursor: pointer;
 }
 
-.sidebar__svg:hover path {
+.sidebar__heart-svg:hover path {
   fill: rgb(98, 2, 128);
 }
 
-.sidebar__svg:active path {
+.sidebar__heart-svg:active path {
   fill: rgb(121, 126, 204);
 }
 
-.radio:checked+.s path {
+.sidebar__heart-svg--disabled path {
   fill: red;
 }
 
@@ -301,6 +310,7 @@
   border-radius: 4px;
   border: 0px;
   cursor: pointer;
+  user-select: none;
 }
 
 .sidebar__button::before {
