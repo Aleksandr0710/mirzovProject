@@ -1,0 +1,22 @@
+.footer__subtitle {
+    font-size: inherit;
+    color: rgb(123, 52, 156)
+}
+
+.footer {
+    background-color: #efdff8;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    align-items: center;
+
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+}
