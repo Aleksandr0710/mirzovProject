@@ -1,0 +1,17 @@
+.PopularCategories__title {
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+.PopularCategories__Apple {
+    margin-top: 20px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Apple {
+    margin-left: 7px;
+    font-size: 20px;
+}

@@ -1,0 +1,9 @@
+.list {
+    margin-left: 35px;
+    padding: 0;
+}
+
+.list__item::marker {
+    color: #888888;
+    font-size: 35px;
+}

@@ -6,6 +6,7 @@
     z-index: 4;
     width: 100%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
 }
 
 .header__inner {
@@ -17,11 +18,13 @@
 
 .header__title {
     font-size: 44px;
+    color: black;
 }
 
 .header__logo {
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 .header__widgets {
@@ -65,3 +68,4 @@
     font-size: inherit;
     color: rgb(123, 52, 156)
 }
+

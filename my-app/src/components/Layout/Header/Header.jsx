@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "./img/logo.png";
 import heart from "./img/heart.svg";
@@ -6,12 +7,14 @@ const Header = () => {
   return (
     <header className="header">
       <section className="header__inner wrapper">
-        <span className="header__logo">
-          <img src={logo} alt="корзина с товаром" height="50" />
-          <h1 className="header__title">
-            <span className="header__subtitle">Mirzov</span>Market
-          </h1>
-        </span>
+        <Link to="/">
+          <span className="header__logo">
+            <img src={logo} alt="корзина с товаром" height="50" />
+            <h1 className="header__title">
+              <span className="header__subtitle">Mirzov</span>Market
+            </h1>
+          </span>
+        </Link>
         <span className="header__widgets">
           <span className="header__heart">
             <img src={heart} alt="избранное" />

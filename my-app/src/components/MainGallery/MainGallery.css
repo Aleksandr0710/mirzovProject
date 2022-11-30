@@ -1,0 +1,27 @@
+.gallery__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .gallery img {
+        max-height: 272px;
+    }
+}

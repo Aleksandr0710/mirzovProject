@@ -1,23 +1,24 @@
-* {
-  box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 19.36px;
-  text-decoration: none;
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-decoration: none;
 }
 
 .wrapper {
-  /* outline: 1px dashed rgb(121, 238, 25); */
-  width: 1500px;
-  margin: 0 auto;
-  padding: 0 50px;
+    /* outline: 1px dashed rgb(121, 238, 25); */
+    width: 1500px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
 
 @media (min-width: 1024px) and (max-width: 1499px) {
-  .wrapper {
-    padding: 0 15px;
-    width: 1024px;
-  }
+    .wrapper {
+        padding: 0 15px;
+        width: 1024px;
+    }
 }

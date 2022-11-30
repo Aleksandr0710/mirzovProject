@@ -1,0 +1,87 @@
+.form {
+    padding: 20px;
+    background: rgb(222, 202, 238);
+    border: 1px solid #bebdbd;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    margin-left: 180px;
+    user-select: none;
+    width: 700px;
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .form {
+        margin-left: 0;
+    }
+}
+
+.form__inner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.error {
+    color: #efdff8;
+    margin: 49px;
+    background: rgb(98, 29, 128);
+    padding: 10px;
+    position: absolute;
+    width: 250px;
+}
+
+.errorName {
+    left: -50px;
+}
+
+.errorAppraisement {
+    left: 357px;
+}
+
+.form__name {
+    padding: 15px 20px;
+    width: 370px;
+    height: 49px;
+}
+
+.form__appraisement {
+    padding: 15px 20px;
+}
+
+.form__text {
+    padding: 15px 20px;
+    width: 661px;
+    height: 190px;
+    margin: 40px 0;
+    resize: none;
+}
+
+.form__button {
+    padding: 10px 20px;
+    background: rgb(215, 176, 247);
+    border-radius: 4px;
+    border: 1px solid rgb(205, 147, 252);
+}
+
+.form input,
+.form textarea {
+    border: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+    background-color: white;
+    box-shadow: 0 0 0 4px #c4c1c1 inset;
+    outline: 0;
+}
+
+.form__button:hover {
+    background: rgb(197, 144, 240);
+    cursor: pointer;
+}
+
+.form__button:active {
+    background: rgb(98, 2, 128);
+}

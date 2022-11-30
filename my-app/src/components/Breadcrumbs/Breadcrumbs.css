@@ -1,0 +1,16 @@
+.breadcrumbs {
+    padding-top: 29px;
+}
+
+.link {
+    color: #008CF0;
+}
+
+.link:hover {
+    color: #a200ff;
+    cursor: pointer;
+}
+
+.link:active {
+    color: rgb(98, 2, 128);
+}

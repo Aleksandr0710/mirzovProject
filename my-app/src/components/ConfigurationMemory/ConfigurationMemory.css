@@ -1,0 +1,29 @@
+.radio:checked+.configuration__button-radio {
+    border-radius: 6px;
+    border: 3px solid rgb(199, 99, 245);
+}
+
+.configuration__button-radio {
+    border: 1px solid #888888;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.configuration__button-radio:hover {
+    cursor: pointer;
+    background-color: #dfdede;
+}
+
+.configuration__button-radio:active {
+    border: 3px solid rgb(98, 2, 128)
+}
+
+.configurationMemory {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.configuration {
+    display: flex;
+    gap: 5px;
+}

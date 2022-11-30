@@ -1,0 +1,49 @@
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .review__avatar {
+        height: 100px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .review__stars img {
+        height: 20px;
+    }
+}
+
+.review__item {
+    display: flex;
+}
+
+.reviews__title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reviews {
+    width: 880px;
+}
+
+.review__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.review__item {
+    padding: 25px 0;
+    border-bottom: 1px dashed grey
+}
+
+.review__item--last {
+    border-bottom: none;
+}
+
+.reviews__count {
+    color: #aaaaaa;
+}
+
+.review__avatar {
+    border-radius: 100px;
+}
