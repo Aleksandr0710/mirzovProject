@@ -1,0 +1,31 @@
+.form__textarea {
+    padding: 15px 20px;
+    width: 661px;
+    height: 190px;
+    margin: 40px 0;
+    resize: none;
+    border: none;
+}
+
+
+.form__textarea:focus {
+    background-color: white;
+    box-shadow: 0 0 0 4px #c4c1c1 inset;
+    outline: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .form__textarea {
+        width: 560px;
+        height: 200px;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .form__textarea {
+        width: 290px;
+        height: 100px;
+        margin: 40px 0;
+    }
+}

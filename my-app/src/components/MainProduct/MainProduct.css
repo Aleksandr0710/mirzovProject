@@ -1,0 +1,52 @@
+.main {
+    margin-top: 93px;
+    padding-bottom: 100px;
+    background: rgb(243, 240, 240);
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+@media (max-width: 360px) {
+    .main__container {
+        display: block;
+    }
+}
+
+.reviews {
+    margin-top: 10px;
+    width: 880px;
+}
+
+@media (max-width: 360px) {
+    .main {
+        margin-top: 29px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .reviews {
+        width: 650px;
+    }
+}
+
+@media (max-width: 360px) {
+    .reviews {
+        margin-top: 10px;
+        width: 330px;
+    }
+}
+
+.radio {
+    user-select: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}

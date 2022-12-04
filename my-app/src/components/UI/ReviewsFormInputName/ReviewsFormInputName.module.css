@@ -1,0 +1,24 @@
+.form__name {
+    padding: 15px 20px;
+    width: 370px;
+    height: 49px;
+    border: none;
+}
+
+.form__name:focus {
+    background-color: white;
+    box-shadow: 0 0 0 4px #c4c1c1 inset;
+    outline: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .form__name {
+        width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    .form__name {
+        width: 290px;
+    }
+}

@@ -1,0 +1,130 @@
+.header {
+    background-color: #efdff8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+}
+
+@media (max-width: 360px) {
+    .header {
+        padding: 10px 0;
+        width: 360px;
+        height: 360;
+    }
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 44px;
+    color: black;
+}
+
+@media (max-width: 360px) {
+    .header__title {
+        font-size: 18px;
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 360px) {
+    .header__logo img {
+        height: 25px;
+    }
+}
+
+.header__widgets {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__heart {
+    display: flex;
+    position: relative;
+    right: 100px;
+}
+
+@media (max-width: 360px) {
+    .header__heart {
+        right: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header__heart img {
+        height: 30px;
+    }
+}
+
+.header__count-heart {
+    font-weight: 500;
+    color: #f3eded;
+    padding: 5px 10px;
+    background: rgb(197, 158, 230);
+    border-radius: 200px;
+    left: 48px;
+    position: absolute;
+}
+
+@media (max-width: 360px) {
+    .header__count-heart {
+        padding: 0 5px;
+        left: 29px;
+    }
+}
+
+.header__cart {
+    display: flex;
+    position: relative;
+    right: 50px;
+}
+
+@media (max-width: 360px) {
+    .header__cart img {
+        height: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header__cart {
+        right: 10px;
+    }
+}
+
+.header__count-cart {
+    left: 50px;
+    position: absolute;
+    font-weight: 500;
+    color: #f3eded;
+    padding: 5px 10px;
+    background: rgb(197, 158, 230);
+    border-radius: 200px;
+}
+
+
+@media (max-width: 360px) {
+    .header__count-cart {
+        padding: 0 5px;
+        left: 29px;
+    }
+}
+
+
+
+.header__subtitle {
+    font-size: inherit;
+    color: rgb(123, 52, 156)
+}

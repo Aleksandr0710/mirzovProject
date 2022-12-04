@@ -1,0 +1,23 @@
+.form__appraisement {
+    padding: 15px 20px;
+    border: none;
+}
+
+.form__appraisement:focus {
+    background-color: white;
+    box-shadow: 0 0 0 4px #c4c1c1 inset;
+    outline: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .form__appraisement {
+        width: 250px;
+    }
+}
+
+@media (max-width: 360px) {
+    .form__appraisement {
+        margin-top: 40px;
+        width: 290px;
+    }
+}

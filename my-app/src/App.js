@@ -1,15 +1,14 @@
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
+import { Routes, Route} from "react-router-dom";
 import "./index.css";
+import PageProduct from "./components/pages/PageProduct/PageProduct";
+import PageHome from "./components/pages/PageHome/PageHome";
 
 function App() {
   return (
-    <section>
-      <Header />
-      <Main />
-      <Footer />
-    </section>
+    <Routes>
+      <Route path="/" element={<PageHome />} />
+      <Route path="/product" element={<PageProduct />} />
+    </Routes>
   );
 }
 

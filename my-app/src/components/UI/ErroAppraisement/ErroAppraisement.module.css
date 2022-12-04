@@ -1,0 +1,23 @@
+.erroAppraisement {
+    color: #efdff8;
+    margin: 49px;
+    background: rgb(98, 29, 128);
+    padding: 10px;
+    position: absolute;
+    width: 250px;
+    left: 359px;
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .erroAppraisement {
+        left: 259px;
+    }
+}
+
+@media (max-width: 360px) {
+    .erroAppraisement {
+        bottom: -104px;
+        width: 250px;
+        left: -50px;
+    }
+}
