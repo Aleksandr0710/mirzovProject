@@ -1,8 +1,23 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "./img/logo.png";
 import heart from "./img/heart.svg";
 import cart from "./img/cart.png";
+
+const CountCart = () => {
+  const count = useSelector((state) => state.cart.products.length)
+  return (
+    <span className="header__count-cart">{count}</span>
+  )
+}
+
+const CountFavorite = () => {
+  const count = useSelector((state) => state.heart.favorites.length)
+  return (
+    <span className="header__count-heart">{count}</span>
+  )
+}
 const Header = () => {
   return (
     <header className="header">
@@ -18,11 +33,11 @@ const Header = () => {
         <span className="header__widgets">
           <span className="header__heart">
             <img src={heart} alt="избранное" />
-            <span className="header__count-heart">0</span>
+            <CountFavorite />
           </span>
           <span className="header__cart">
             <img src={cart} alt="корзина с товаром" height="50" />
-            <span className="header__count-cart">0</span>
+            <CountCart />
           </span>
         </span>
       </section>

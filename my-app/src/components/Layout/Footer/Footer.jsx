@@ -1,6 +1,7 @@
 import "./Footer.css";
 import Link from "../../Link/Link";
 const Footer = () => {
+
   return (
     <footer className="footer">
       <div className="footer__container wrapper">

@@ -18,10 +18,13 @@ const Reviews = () => {
                             <img src={rev.star} alt="звездa" height="30" />
                             <img src={rev.star} alt="звездa" height="30" />
                         </div>
+                        <br/>
                         <p><b>Опыт использования:</b> {rev.experience} </p>
+                        <br/>
                         <p>
                             <b>Достоинства:</b> <br />{rev.advantages}
                         </p>
+                        <br/>
                         <p>
                             <b>Недостатки:</b> <br />{rev.flaws}
                         </p>

@@ -1,54 +1,92 @@
-import "./MainTable.css"
+import styled from "styled-components"
+
+const CompareTitle = styled.h2`
+margin-top: 20px;
+@media (min-width: 1024px) and (max-width: 1499px) {
+ display: none;
+}
+@media (max-width: 360px) {
+   display: none;
+}
+`
+
+const Table = styled.table`
+ border-collapse: collapse;
+ @media (min-width: 1024px) and (max-width: 1499px) {
+        display: none;
+}
+@media (max-width: 360px) {
+   display: none;
+}
+`
+
+const TableTitle = styled.th`
+ border: 1px solid #888888;
+ padding: 9px;
+`
+
+const TableInfo = styled.td`
+ border: 1px solid #888888;
+ padding: 9px;
+`
+
+const TableRow = styled.tr`
+&:hover {
+    cursor: pointer;
+    background: rgb(222, 202, 238);
+}
+`
+
 const MainTable = () => {
     return (
         <>
-            <h2 className="compare-title">Cравнение моделей</h2>
-            <table className="table">
+            <CompareTitle>Cравнение моделей</CompareTitle>
+            <Table>
                 <thead>
                     <tr>
-                        <th className="table__title">Модель</th>
-                        <th className="table__title">Вес</th>
-                        <th className="table__title">Высота</th>
-                        <th className="table__title">Ширина</th>
-                        <th className="table__title">Толщина</th>
-                        <th className="table__title">Чип</th>
-                        <th className="table__title">Объём памяти</th>
-                        <th className="table__title">Аккумулятор</th>
+                        <TableTitle>Модель</TableTitle>
+                        <TableTitle>Вес</TableTitle>
+                        <TableTitle>Высота</TableTitle>
+                        <TableTitle>Ширина</TableTitle>
+                        <TableTitle>Толщина</TableTitle>
+                        <TableTitle>Чип</TableTitle>
+                        <TableTitle>Объём памяти</TableTitle>
+                        <TableTitle>Аккумулятор</TableTitle>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="table__row">
-                        <td className="table__info">Iphone 11</td>
-                        <td className="table__info">194 грамма</td>
-                        <td className="table__info">150.9 мм</td>
-                        <td className="table__info">75.7 мм</td>
-                        <td className="table__info">8.3 мм</td>
-                        <td className="table__info">A13 Bionicchip</td>
-                        <td className="table__info">до 128 Гб</td>
-                        <td className="table__info">До 17 часов</td>
-                    </tr>
-                    <tr className="table__row">
-                        <td className="table__info">Iphone 12</td>
-                        <td className="table__info">164 грамма</td>
-                        <td className="table__info">146.7 мм</td>
-                        <td className="table__info">71.5 мм</td>
-                        <td className="table__info">7.4 мм</td>
-                        <td className="table__info">A14 Bionicchip</td>
-                        <td className="table__info">до 256 Гб</td>
-                        <td className="table__info">До 19 часов</td>
-                    </tr>
-                    <tr className="table__row">
-                        <td className="table__info">Iphone 13</td>
-                        <td className="table__info">174 грамма</td>
-                        <td className="table__info">146.7 мм</td>
-                        <td className="table__info">71.5 мм</td>
-                        <td className="table__info">7.65 мм</td>
-                        <td className="table__info">A15 Bionicchip</td>
-                        <td className="table__info">до 512 Гб</td>
-                        <td className="table__info">До 19 часов</td>
-                    </tr>
+                    <TableRow>
+                        <TableInfo>Iphone 11</TableInfo>
+                        <TableInfo>194 грамма</TableInfo>
+                        <TableInfo>150.9 мм</TableInfo>
+                        <TableInfo>75.7 мм</TableInfo>
+                        <TableInfo>8.3 мм</TableInfo>
+                        <TableInfo>A13 Bionicchip</TableInfo>
+                        <TableInfo>до 128 Гб</TableInfo>
+                        <TableInfo>До 17 часов</TableInfo>
+                    </TableRow>
+                    <TableRow>
+                        <TableInfo>Iphone 12</TableInfo>
+                        <TableInfo>164 грамма</TableInfo>
+                        <TableInfo>146.7 мм</TableInfo>
+                        <TableInfo>71.5 мм</TableInfo>
+                        <TableInfo>7.4 мм</TableInfo>
+                        <TableInfo>A14 Bionicchip</TableInfo>
+                        <TableInfo>до 256 Гб</TableInfo>
+                        <TableInfo>До 19 часов</TableInfo>
+                    </TableRow>
+                    <TableRow>
+                        <TableInfo>Iphone 13</TableInfo>
+                        <TableInfo>174 грамма</TableInfo>
+                        <TableInfo>146.7 мм</TableInfo>
+                        <TableInfo>71.5 мм</TableInfo>
+                        <TableInfo>7.65 мм</TableInfo>
+                        <TableInfo>A15 Bionicchip</TableInfo>
+                        <TableInfo>до 512 Гб</TableInfo>
+                        <TableInfo>До 19 часов</TableInfo>
+                    </TableRow>
                 </tbody>
-            </table>
+            </Table>
         </>
     );
 }

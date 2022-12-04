@@ -1,5 +1,5 @@
 .sidebar__container {
-    padding: 20px;
+    padding: 15px;
     background: #ffffff;
     border: 1px solid #bebdbd;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -25,9 +25,9 @@
 
 .sidebar {
     width: 420px;
-    display: flex;
-    flex-direction: column;
 }
+
+
 
 .sidebar__price,
 .sidebar__price-new {
@@ -52,9 +52,11 @@
 .sidebar__discount {
     font-weight: 500;
     color: #f3eded;
-    padding: 9px 10px;
+    margin-left: 5px;
+    padding: 5px 5px;
     background: rgb(197, 158, 230);
-    border-radius: 500px;
+    border-radius: 100px;
+    font-size: 14px;
 }
 
 .sidebar__heart-svg path {
@@ -65,16 +67,20 @@
     cursor: pointer;
 }
 
+.sidebar__heart-svg--disabled:hover {
+    cursor: pointer;
+}
+
 .sidebar__heart-svg:hover path {
-    fill: rgb(98, 2, 128);
+    fill: rgb(163, 8, 8);
 }
 
 .sidebar__heart-svg:active path {
-    fill: rgb(121, 126, 204);
+    fill: rgb(121, 15, 15);
 }
 
 .sidebar__heart-svg--disabled path {
-    fill: red;
+    fill: rgb(255, 0, 0);
 }
 
 .sidebar__button {
@@ -120,7 +126,7 @@
     width: 25px;
     height: 25px;
     top: 17px;
-    left: 75px;
+    left: 63px;
 }
 
 .sidebar__button:hover {
@@ -131,10 +137,34 @@
     background: rgb(98, 2, 128);
 }
 
-.sidebar__button:hover.sidebar__button--disabled {
+.sidebar__button--disabled:hover {
+    background: rgb(119, 112, 112);
+}
+
+.sidebar__button--disabled:active {
     background: rgb(58, 52, 52);
 }
 
-.sidebar__button:active.sidebar__button--disabled {
-    background: rgb(119, 112, 112);
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .sidebar {
+        width: 320px;
+    }
+}
+
+@media (max-width: 360px) {
+    .sidebar {
+        width: 320px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .sidebar__button::before {
+        left: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    .sidebar__button::before {
+        left: 50px;
+    }
 }

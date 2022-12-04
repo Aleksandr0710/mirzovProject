@@ -11,8 +11,28 @@
     }
 }
 
+@media (max-width: 360px) {
+    .review__avatar {
+        height: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+    .review__stars img {
+        height: 20px;
+    }
+}
+
 .review__item {
+    padding: 25px 0;
+    border-bottom: 1px dashed grey;
     display: flex;
+}
+
+@media (max-width: 360px) {
+    .review__item {
+        display: block;
+    }
 }
 
 .reviews__title {
@@ -21,23 +41,16 @@
     gap: 5px;
 }
 
-.reviews {
-    width: 880px;
-}
-
 .review__text {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
 }
 
-.review__item {
-    padding: 25px 0;
-    border-bottom: 1px dashed grey
-}
-
-.review__item--last {
-    border-bottom: none;
+@media (max-width: 360px) {
+    .review__text {
+        padding-left: 0;
+    }
 }
 
 .reviews__count {

@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
-import "./ReviewsForn.css"
+import ReviewsFormButton from "../UI/ReviewsFormButton/ReviewsFormButton"
+import ReviewsFormInputName from "../UI/ReviewsFormInputName/ReviewsFormInputName"
+import ReviewsFormInputAppraisement from "../UI/ReviewsFormInputAppraisement/ReviewsFormInputAppraisement"
+import ReviewsFormTextarea from "../UI/ReviewsFormTextarea/ReviewsFormTextarea"
+import ErrorAppraisement from "../UI/ErroAppraisement/ErrorAppraisement"
+import ErrorName from "../UI/ErrorName/ErrorName"
+import "./ReviewsForm.css"
 
-const ReviewsForn = () => {
+const ReviewsForm = () => {
     const [name, setName] = useState(localStorage.getItem("name"))
     const [appraisement, setAppraisement] = useState(localStorage.getItem("appraisement"))
     const [textarea, setArea] = useState(localStorage.getItem("textarea"))
@@ -81,15 +87,15 @@ const ReviewsForn = () => {
         <form className="form">
             <h2>Добавить свой отзыв</h2>
             <div className="form__inner">
-                {(nameDirty && nameError) && <div className="error errorName">{nameError}</div>}
-                <input onChange={e => nameHandler(e)} value={name} name="name" onFocus={e => focusHandler(e)} onBlur={e => blurHandler(e)} className="form__name" placeholder="Имя и фамилия*" />
-                {(appraisementDirty && appraisementError) && <div className="error errorAppraisement">{appraisementError}</div>}
-                <input onChange={e => appraisementHandler(e)} value={appraisement} name="appraisement" onFocus={e => focusHandler(e)} onBlur={e => blurHandler(e)} className="form__appraisement" placeholder="Оценка*" />
+                {(nameDirty && nameError) && <ErrorName className="error errorName">{nameError}</ErrorName>}
+                <ReviewsFormInputName onChange={e => nameHandler(e)} value={name} name="name" onFocus={e => focusHandler(e)} onBlur={e => blurHandler(e)} placeholder="Имя и фамилия*" />
+                {(appraisementDirty && appraisementError) && <ErrorAppraisement className="error errorAppraisement">{appraisementError}</ErrorAppraisement>}
+                <ReviewsFormInputAppraisement onChange={e => appraisementHandler(e)} value={appraisement} name="appraisement" onFocus={e => focusHandler(e)} onBlur={e => blurHandler(e)} placeholder="Оценка*" />
             </div>
-            <textarea value={textarea} onChange={e => textareaHandler(e)} name="textarea" className="form__text" placeholder="Текст отзыва"></textarea>
-            <button onClick={preventDefault} disabled={!formValid} className="form__button">Оставить отзыв</button>
+            <ReviewsFormTextarea value={textarea} onChange={e => textareaHandler(e)} name="textarea" className="form__text" placeholder="Текст отзыва" />
+            <ReviewsFormButton onClick={preventDefault} disabled={!formValid}>Оставить отзыв</ReviewsFormButton>
         </form>
     );
 }
 
-export default ReviewsForn;
+export default ReviewsForm;

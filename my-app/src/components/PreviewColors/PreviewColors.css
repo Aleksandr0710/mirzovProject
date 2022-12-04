@@ -7,6 +7,14 @@
     gap: 10px;
 }
 
+@media (max-width: 360px) {
+    .preview {
+        margin-left: -20px;
+        display: flex;
+        gap: 5px;
+    }
+}
+
 .preview__img-radio {
     border: 1px solid #888888;
     border-radius: 4px;
@@ -18,14 +26,27 @@
     cursor: pointer;
 }
 
+@media (max-width: 360px) {
+    .preview__img-radio {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    .preview__img-radio img {
+        height: 40px;
+    }
+}
+
 .preview__img-radio:hover {
     background: rgb(214, 212, 212);
 }
 
 .preview__img-radio:active {
-    border: 3px solid rgb(98, 2, 128)
+    border: 2px solid rgb(98, 2, 128)
 }
 
 .radio:checked+.preview__img-radio {
-    border: 3px solid rgb(199, 99, 245);
+    border: 2px solid rgb(199, 99, 245);
 }

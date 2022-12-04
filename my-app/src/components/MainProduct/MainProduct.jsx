@@ -2,17 +2,17 @@ import "./MainProduct.css";
 import BreadcrumbsList from "../Breadcrumbs/BreadcrumbsList"
 import Reviews from "../Reviews/Reviews"
 import ProductCharacteristics from "../ProductCharacteristics/ProductCharacteristics"
-import ReviewsForn from "../ReviewsForn/ReviewsForn"
+import ReviewsForm from "../ReviewsForm/ReviewsForm"
 import MainTable from "../MainTable/MainTable"
-import Sidebsr from "../Sidebar/Sidebsr"
+import Sidebar from "../Sidebar/Sidebar"
 import Iframe from "../Iframe/Iframe"
-import MainGalleryList from "../MainGallery/MainGalleryList"
+import MainSliderList from "../MainSlider/MainSliderList"
 const Main = () => {
   return (
     <main className="main">
       <div className="wrapper">
         <BreadcrumbsList />
-        <MainGalleryList />
+        <MainSliderList />
         <div className="main__container">
           <section>
             < ProductCharacteristics />
@@ -24,6 +24,7 @@ const Main = () => {
               Аккумулятор держится заметно дольше.<br />
               <i>iPhone 13 - сильный мира всего.</i>
             </p>
+            <br/>
             <p>
               Мы разработали совершенно новую схему расположения и
               развернулиобъективы на 45 градусов. Благодаря этому внутри корпуса
@@ -32,6 +33,7 @@ const Main = () => {
               оптической стабилизацииизображения сдвигом матрицы. И повысили
               скорость работы матрицы насверхширокоугольной камере.
             </p>
+            <br/>
             <p>
               Новая сверхширокоугольная камера видит больше деталей в тёмных
               областях снимков. Новая широкоугольная камера улавливает на 47% больше
@@ -39,6 +41,7 @@ const Main = () => {
               стабилизация сосдвигом матрицы обеспечит чёткие кадры даже в
               неустойчивом положении.
             </p>
+            <br/>
             <p>
               Режим «Киноэффект» автоматически добавляет великолепные эффекты
               перемещенияфокуса и изменения резкости. Просто начните запись видео.
@@ -51,13 +54,13 @@ const Main = () => {
             <MainTable />
           </section>
           <section>
-            <Sidebsr />
+            <Sidebar />
             <Iframe />
           </section>
         </div>
         <section className="reviews">
           <Reviews />
-          <ReviewsForn />
+          <ReviewsForm />
         </section>
       </div>
     </main >
