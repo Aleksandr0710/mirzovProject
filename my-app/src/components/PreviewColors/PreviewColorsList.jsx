@@ -11,7 +11,7 @@ const PreviewColors = () => {
       <li className=" list__item preview__selected-item"><b>Цвет товара: голубой</b></li>
       <div className="preview">
         {previewColors.map(({ id, alt, img }) => (
-          <PreviewColorsItem id={id} alt={alt} img={img} onClickHandler={onClickHandler} checked={currentId === id} />
+          <PreviewColorsItem key={img} id={id} alt={alt} img={img} onClickHandler={onClickHandler} checked={currentId === id} />
         ))}
       </div>
     </>

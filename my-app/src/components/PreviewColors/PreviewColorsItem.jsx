@@ -8,7 +8,7 @@ const PreviewColorsItem = ({ id, img, alt, onClickHandler, checked }) => {
                 id={id}
                 checked={checked}
             />
-            <label className="preview__img-radio " for={id} key={id} onClick={() => onClickHandler(id)}>
+            <label className="preview__img-radio " htmlFor={id} key={id} onClick={() => onClickHandler(id)}>
                 <img src={img} alt={alt} height="60" />
             </label>
         </>

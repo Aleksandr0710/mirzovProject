@@ -1,13 +1,15 @@
+import { useCurrentDate } from "@kundinos/react-hooks"
 import "./Footer.css";
 import Link from "../../Link/Link";
 const Footer = () => {
-
+  const currentDate = useCurrentDate();
+  const fullYear = currentDate.getFullYear();
   return (
     <footer className="footer">
       <div className="footer__container wrapper">
         <div className="footer__info">
           <span>
-            <b> © ООО «<span className="footer__subtitle">Mirzov</span>Market» 2018-2022. </b>
+            <b> © ООО «<span className="footer__subtitle">Mirzov</span>Market» 2018-{fullYear}.</b>
           </span>
           <span>Для уточнения информации звоните по номеру {""}
             <Link link={{ className: "link", href: "tel:79000000000", text: "+7 900 000 0000" }} />

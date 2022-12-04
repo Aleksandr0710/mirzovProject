@@ -3,6 +3,32 @@
     font-size: 32px;
 }
 
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .gallery img {
+        height: 220px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .PopularCategories__title {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    .PopularCategories__title {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 360px) {
+    .gallery img {
+        display: none;
+    }
+}
+
 .gallery {
     display: flex;
     gap: 10px;
@@ -10,8 +36,7 @@
 
 @media (min-width: 1024px) and (max-width: 1499px) {
     .gallery img {
-        max-height: 260px;
-        
+        height: 230px;
     }
 }
 
@@ -28,6 +53,33 @@
     display: flex;
 }
 
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .PopularCategories__Apple {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 360px) {
+    .PopularCategories__Apple {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 250px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .PopularCategories__Apple img {
+        height: 65px;
+    }
+}
+
+@media (max-width: 360px) {
+    .PopularCategories__Apple img {
+        height: 65px;
+    }
+}
+
 .PopularCategories__Apple:hover {
     box-shadow: 0 0 0 4px #888888 inset;
     outline: 0;
@@ -37,4 +89,16 @@
 .Apple {
     font-size: 20px;
     color: black;
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .Apple {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 360px) {
+    .Apple {
+        font-size: 17px;
+    }
 }

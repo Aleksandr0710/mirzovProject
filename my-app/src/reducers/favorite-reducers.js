@@ -1,12 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const cartSlice = createSlice({
+export const heartSlice = createSlice({
   name: "heart",
   initialState: {
-    favorites: [],
+    favorites: JSON.parse(localStorage.getItem("favorites-product")) || [],
   },
   reducers: {
     addFavorite: (prevState, action) => {
+      const newState = {
+        ...prevState,
+        favorites: [...prevState.favorites, action.payload],
+      };
+      const data = JSON.stringify(newState.favorites);
+      localStorage.setItem("favorites-product", data);
+
       if (
         prevState.favorites.some(
           (prevFavorit) => prevFavorit.id === prevFavorit.id
@@ -19,6 +26,7 @@ export const cartSlice = createSlice({
       };
     },
     deletFavorite: (prevState, action) => {
+      localStorage.removeItem("favorites-product");
       return {
         ...prevState,
         favorites: prevState.favorites.filter((prevFavorit) => {
@@ -28,6 +36,6 @@ export const cartSlice = createSlice({
     },
   },
 });
-export const { addFavorite, deletFavorite } = cartSlice.actions;
+export const { addFavorite, deletFavorite } = heartSlice.actions;
 
-export default cartSlice.reducer;
+export default heartSlice.reducer;

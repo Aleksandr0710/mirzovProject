@@ -19,7 +19,7 @@ const MainSlider = () => {
                     grabCursor={true}
                 >
                     {SliderPhone.map(({ img, alt, id }) => (
-                        <SwiperSlide><MainSliderItem img={img} alt={alt} key={id} height="387" /></SwiperSlide>
+                        <SwiperSlide key={img}><MainSliderItem img={img} alt={alt} key={img} height="387" /></SwiperSlide>
                     ))}
                 </Swiper>
             </div>

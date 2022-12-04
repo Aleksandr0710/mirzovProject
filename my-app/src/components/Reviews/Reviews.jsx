@@ -7,7 +7,7 @@ const Reviews = () => {
                 <h2>Отзывы</h2> <span className="reviews__count">3245</span>
             </div>
             {reviews.map((rev) => (
-                <div className="review__item">
+                <div className="review__item" key={rev.name}>
                     < img className="review__avatar" src={rev.avatar} alt={rev.name} height="200" />
                     <div className="review__text">
                         <b>{rev.name}</b>

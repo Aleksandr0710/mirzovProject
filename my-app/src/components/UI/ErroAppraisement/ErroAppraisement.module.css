@@ -5,13 +5,19 @@
     padding: 10px;
     position: absolute;
     width: 250px;
-    left: -50px;
+    left: 359px;
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .erroAppraisement {
+        left: 259px;
+    }
 }
 
 @media (max-width: 360px) {
     .erroAppraisement {
-        bottom: -87px;
-            width: 250px;
-            left: -50px;
-        }
+        bottom: -104px;
+        width: 250px;
+        left: -50px;
+    }
 }
