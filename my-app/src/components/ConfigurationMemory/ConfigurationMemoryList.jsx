@@ -11,7 +11,12 @@ const ConfigurationMemoryList = () => {
             <li className="list__item configurationMemory">Конфигурация памяти: 128 ГБ</li>
             <div className="configuration">
                 {configurationMemory.map(({ memory, id }) => (
-                    <ConfigurationMemoryItem key={memory} memory={memory} id={id} onClickHandler={onClickHandler} checked={currentId === id} />
+                    <ConfigurationMemoryItem
+                        key={memory}
+                        memory={memory}
+                        id={id}
+                        onClickHandler={onClickHandler}
+                        checked={currentId === id} />
                 ))}
             </div>
         </>

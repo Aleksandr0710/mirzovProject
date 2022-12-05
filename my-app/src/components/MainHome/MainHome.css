@@ -51,6 +51,7 @@
     width: 110px;
     height: 110px;
     display: flex;
+    margin-bottom: 100px;
 }
 
 @media (min-width: 1024px) and (max-width: 1499px) {
