@@ -6,6 +6,8 @@
 .footer {
     background-color: #efdff8;
     width: 100%;
+    right: 0;
+    bottom: 0;
 }
 
 .footer__container {

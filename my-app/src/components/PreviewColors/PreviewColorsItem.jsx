@@ -1,4 +1,4 @@
-const PreviewColorsItem = ({ id, img, alt, onClickHandler, checked }) => {
+const PreviewColorsItem = ({ id, img, alt, onChangeHandler, checked }) => {
     return (
         <>
             <input
@@ -6,9 +6,9 @@ const PreviewColorsItem = ({ id, img, alt, onClickHandler, checked }) => {
                 type="radio"
                 name="preview"
                 id={id}
-                checked={checked}
+                defaultChecked={checked}
             />
-            <label className="preview__img-radio " htmlFor={id} key={id} onClick={() => onClickHandler(id)}>
+            <label className="preview__img-radio " htmlFor={id} key={id} onClick={() => onChangeHandler(id)}>
                 <img src={img} alt={alt} height="60" />
             </label>
         </>
