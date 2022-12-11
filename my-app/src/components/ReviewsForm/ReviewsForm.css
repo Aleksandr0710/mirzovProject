@@ -11,19 +11,7 @@
 }
 
 
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .form {
-        margin-left: 0;
-        width: 600px;
-    }
-}
 
-@media (max-width: 360px) {
-    .form {
-        margin-left: 0;
-        width: 330px;
-    }
-}
 
 .form__inner {
     margin-top: 10px;
@@ -34,8 +22,22 @@
     gap: 40px;
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .form__inner {
         display: block;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .form {
+        margin-left: 0;
+        width: 600px;
+    }
+}
+
+@media (max-width:360px) {
+    .form {
+        margin-left: 0;
+        width: 330px;
     }
 }

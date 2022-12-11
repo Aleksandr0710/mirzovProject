@@ -8,10 +8,9 @@
     left: -49px;
 }
 
-@media (max-width: 360px) {
-.errorName {
+@media (max-width:360px) {
+    .errorName {
         width: 290px;
         left: -50px;
     }
 }
-

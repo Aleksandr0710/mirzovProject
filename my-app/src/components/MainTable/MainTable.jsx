@@ -5,7 +5,7 @@ margin-top: 20px;
 @media (min-width: 1024px) and (max-width: 1499px) {
  display: none;
 }
-@media (max-width: 360px) {
+@media (max-width:360px) {
    display: none;
 }
 `
@@ -15,7 +15,7 @@ const Table = styled.table`
  @media (min-width: 1024px) and (max-width: 1499px) {
         display: none;
 }
-@media (max-width: 360px) {
+@media (max-width:360px) {
    display: none;
 }
 `

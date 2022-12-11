@@ -22,7 +22,7 @@
     flex-direction: column;
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .footer__container {
         padding: 10px 10px;
     }

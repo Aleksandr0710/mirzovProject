@@ -7,7 +7,6 @@
     border: none;
 }
 
-
 .form__textarea:focus {
     background-color: white;
     box-shadow: 0 0 0 4px #c4c1c1 inset;
@@ -22,7 +21,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .form__textarea {
         width: 290px;
         height: 100px;
