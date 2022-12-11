@@ -151,8 +151,9 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .sidebar {
+        margin-top: 10px;
         width: 320px;
     }
 }
@@ -169,13 +170,13 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .sidebar__button--disabled::before {
         left: 30px;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .sidebar__button::before {
         left: 50px;
     }

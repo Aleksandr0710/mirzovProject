@@ -16,7 +16,7 @@ const Global = createGlobalStyle`
     font-size: 16px;
     line-height: 19.36px;
     text-decoration: none;
-    @media (max-width: 360px) {
+    @media (max-width:360px) {
     font-size: 13px;
     line-height: 17px;
     }

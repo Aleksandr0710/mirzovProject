@@ -15,7 +15,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .form__appraisement {
         margin-top: 40px;
         width: 290px;

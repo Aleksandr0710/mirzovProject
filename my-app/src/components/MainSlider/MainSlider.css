@@ -7,13 +7,6 @@
     margin-bottom: 30px;
 }
 
-@media (max-width: 360px) {
-    .slider__title {
-        font-size: 23px;
-        margin-bottom: 5px;
-    }
-}
-
 .sliderBox {
     min-width: 0;
     user-select: none;
@@ -39,8 +32,15 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .sliderBox img {
         max-height: 250px;
+    }
+}
+
+@media (max-width:360px) {
+    .slider__title {
+        font-size: 23px;
+        margin-bottom: 5px;
     }
 }

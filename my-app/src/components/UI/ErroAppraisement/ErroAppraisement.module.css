@@ -14,7 +14,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .erroAppraisement {
         bottom: -87px;
         width: 250px;

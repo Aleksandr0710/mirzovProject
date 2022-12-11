@@ -3,42 +3,14 @@
     font-size: 32px;
 }
 
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .gallery img {
-        height: 220px;
-    }
-}
 
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .PopularCategories__title {
-        margin-top: 30px;
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 360px) {
-    .PopularCategories__title {
-        margin-top: 30px;
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 360px) {
-    .gallery img {
-        display: none;
-    }
-}
 
 .gallery {
     display: flex;
     gap: 10px;
 }
 
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .gallery img {
-        height: 230px;
-    }
-}
+
 
 .PopularCategories__Apple {
     margin-top: 30px;
@@ -52,33 +24,6 @@
     height: 110px;
     display: flex;
     margin-bottom: 100px;
-}
-
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .PopularCategories__Apple {
-        width: 90px;
-        height: 90px;
-    }
-}
-
-@media (max-width: 360px) {
-    .PopularCategories__Apple {
-        width: 90px;
-        height: 90px;
-        margin-bottom: 250px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .PopularCategories__Apple img {
-        height: 65px;
-    }
-}
-
-@media (max-width: 360px) {
-    .PopularCategories__Apple img {
-        height: 65px;
-    }
 }
 
 .PopularCategories__Apple:hover {
@@ -98,8 +43,67 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .Apple {
         font-size: 17px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .gallery img {
+        height: 220px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .PopularCategories__title {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width:360px) {
+    .PopularCategories__title {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width:360px) {
+    .gallery img {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .PopularCategories__Apple img {
+        height: 65px;
+    }
+}
+
+@media (max-width:360px) {
+    .PopularCategories__Apple img {
+        height: 65px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .PopularCategories__Apple {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width:360px) {
+    .PopularCategories__Apple {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 250px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .gallery img {
+        height: 230px;
     }
 }

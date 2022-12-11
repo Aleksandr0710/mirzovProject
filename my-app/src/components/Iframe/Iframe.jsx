@@ -7,7 +7,7 @@ const Ad = styled.div`
     height: 320px ; 
      width: 320px ;
  }
-     @media (max-width: 360px) {
+     @media (max-width:360px) {
     display: none;
 }
 `
