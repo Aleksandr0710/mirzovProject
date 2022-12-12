@@ -2,21 +2,15 @@ import styled from "styled-components"
 
 const CompareTitle = styled.h2`
 margin-top: 20px;
-@media (min-width: 1024px) and (max-width: 1499px) {
+@media (max-width: 1499px) {
  display: none;
-}
-@media (max-width:360px) {
-   display: none;
 }
 `
 
 const Table = styled.table`
  border-collapse: collapse;
- @media (min-width: 1024px) and (max-width: 1499px) {
+ @media (max-width: 1499px) {
         display: none;
-}
-@media (max-width:360px) {
-   display: none;
 }
 `
 

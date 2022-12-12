@@ -21,6 +21,14 @@
     }
 }
 
+@media (max-width:425px) {
+    .form__textarea {
+        width: 360px;
+        height: 150px;
+        margin: 40px 0;
+    }
+}
+
 @media (max-width:360px) {
     .form__textarea {
         width: 290px;
@@ -28,3 +36,4 @@
         margin: 40px 0;
     }
 }
+

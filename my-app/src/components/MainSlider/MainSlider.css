@@ -32,6 +32,19 @@
     }
 }
 
+@media (max-width:425px) {
+    .sliderBox img {
+        max-height: 290px;
+    }
+}
+
+@media (max-width:425px) {
+    .slider__title {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+}
+
 @media (max-width:360px) {
     .sliderBox img {
         max-height: 250px;
@@ -44,3 +57,4 @@
         margin-bottom: 5px;
     }
 }
+

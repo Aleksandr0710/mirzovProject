@@ -11,6 +11,13 @@
     }
 }
 
+@media (max-width:425px) {
+    .wrapper {
+        width: 425px;
+        padding: 0 15px;
+    }
+}
+
 @media (max-width:360px) {
     .wrapper {
         width: 360px;
