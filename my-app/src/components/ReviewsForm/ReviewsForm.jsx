@@ -53,7 +53,7 @@ const ReviewsForm = () => {
         localStorage.setItem("appraisement", e.target.value);
         setAppraisement(e.target.value)
         if (isNaN(e.target.value)) {
-            return setAppraisementError("Оценка не должна содержать цифры")
+            return setAppraisementError("Оценка должна содержать цифры")
         }
         if ((e.target.value < 1 || e.target.value > 5)) {
             return setAppraisementError("Оценка должна быть от 1 до 5")

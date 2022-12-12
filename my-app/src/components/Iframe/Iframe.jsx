@@ -1,4 +1,3 @@
-import "./Iframe.css"
 import styled from "styled-components"
 
 const Ad = styled.div`
@@ -7,7 +6,7 @@ const Ad = styled.div`
     height: 320px ; 
      width: 320px ;
  }
-     @media (max-width:360px) {
+     @media (max-width:425px) {
     display: none;
 }
 `

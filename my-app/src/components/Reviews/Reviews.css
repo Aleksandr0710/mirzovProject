@@ -36,6 +36,30 @@
     }
 }
 
+@media (max-width:425px) {
+    .review__avatar {
+        height: 100px;
+    }
+}
+
+@media (max-width:425px) {
+    .review__stars img {
+        height: 20px;
+    }
+}
+
+@media (max-width:425px) {
+    .review__text {
+        padding-left: 0;
+    }
+}
+
+@media (max-width:425px) {
+    .review__item {
+        display: block;
+    }
+}
+
 @media (max-width:360px) {
     .review__avatar {
         height: 100px;
@@ -59,3 +83,4 @@
         display: block;
     }
 }
+

@@ -70,11 +70,67 @@
     color: rgb(123, 52, 156)
 }
 
+@media (max-width:425px) {
+    .header {
+        padding: 10px 0;
+        width: 425px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__count-cart {
+        padding: 0 5px;
+        left: 29px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__cart {
+        right: 10px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__cart img {
+        height: 30px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__heart {
+        right: 30px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__heart img {
+        height: 30px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__count-heart {
+        padding: 0 5px;
+        left: 29px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__logo img {
+        height: 30px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__title {
+        font-size: 20px;
+    }
+}
+
 @media (max-width:360px) {
     .header {
         padding: 10px 0;
         width: 360px;
-        height: 360;
     }
 }
 

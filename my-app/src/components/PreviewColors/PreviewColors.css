@@ -31,6 +31,27 @@
     border: 2px solid rgb(199, 99, 245);
 }
 
+@media (max-width:425px) {
+    .preview {
+        margin-left: -20px;
+        display: flex;
+        gap: 5px;
+    }
+}
+
+@media (max-width:425px) {
+    .preview__img-radio {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width:425px) {
+    .preview__img-radio img {
+        height: 45px;
+    }
+}
+
 @media (max-width:360px) {
     .preview {
         margin-left: -20px;

@@ -17,8 +17,15 @@
     }
 }
 
+@media (max-width:425px) {
+    .form__name {
+        width: 360px;
+    }
+}
+
 @media (max-width:360px) {
     .form__name {
         width: 290px;
     }
 }
+

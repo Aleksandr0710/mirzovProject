@@ -25,6 +25,32 @@
     z-index: -1;
 }
 
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .reviews {
+        width: 650px;
+    }
+}
+
+@media (max-width:425px) {
+    .main__container {
+        display: block;
+    }
+}
+
+@media (max-width:425px) {
+    .main {
+        margin-top: 29px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width:425px) {
+    .reviews {
+        margin-top: 10px;
+        width: 400px;
+    }
+}
+
 @media (max-width:360px) {
     .main__container {
         display: block;
@@ -35,12 +61,6 @@
     .main {
         margin-top: 29px;
         padding-bottom: 40px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .reviews {
-        width: 650px;
     }
 }
 

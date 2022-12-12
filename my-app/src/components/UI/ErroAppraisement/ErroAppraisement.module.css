@@ -14,6 +14,14 @@
     }
 }
 
+@media (max-width:425px) {
+    .erroAppraisement {
+        bottom: -87px;
+        width: 250px;
+        left: -50px;
+    }
+}
+
 @media (max-width:360px) {
     .erroAppraisement {
         bottom: -87px;

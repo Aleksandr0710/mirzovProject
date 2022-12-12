@@ -3,14 +3,10 @@
     font-size: 32px;
 }
 
-
-
 .gallery {
     display: flex;
     gap: 10px;
 }
-
-
 
 .PopularCategories__Apple {
     margin-top: 30px;
@@ -62,6 +58,58 @@
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .PopularCategories__Apple img {
+        height: 65px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .PopularCategories__Apple {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .gallery img {
+        height: 230px;
+    }
+}
+
+@media (max-width:425px) {
+    .Apple {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:425px) {
+    .PopularCategories__title {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width:425px) {
+    .gallery img {
+        display: none;
+    }
+}
+
+@media (max-width:425px) {
+    .PopularCategories__Apple img {
+        height: 65px;
+    }
+}
+
+@media (max-width:425px) {
+    .PopularCategories__Apple {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 267px;
+    }
+}
+
 @media (max-width:360px) {
     .PopularCategories__title {
         margin-top: 30px;
@@ -75,22 +123,10 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .PopularCategories__Apple img {
-        height: 65px;
-    }
-}
 
 @media (max-width:360px) {
     .PopularCategories__Apple img {
         height: 65px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .PopularCategories__Apple {
-        width: 90px;
-        height: 90px;
     }
 }
 
@@ -99,11 +135,5 @@
         width: 90px;
         height: 90px;
         margin-bottom: 250px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1499px) {
-    .gallery img {
-        height: 230px;
     }
 }
