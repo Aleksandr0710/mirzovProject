@@ -1,12 +1,13 @@
 .radio:checked+.configuration__button-radio {
-    border-radius: 6px;
     border: 2px solid rgb(199, 99, 245);
 }
 
 .configuration__button-radio {
-    border: 1px solid #888888;
+    border: 2px solid #888888;
     padding: 5px 10px;
     border-radius: 4px;
+    margin-left: 5px;
+    user-select: none;
 }
 
 
@@ -25,8 +26,7 @@
 }
 
 .configuration {
-    display: flex;
-    gap: 5px;
+    margin-bottom: 5px;
 }
 
 @media (max-width:425px) {

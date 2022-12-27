@@ -1,4 +1,4 @@
-import "./MainProduct.css";
+import "./MainApple.css";
 import BreadcrumbsList from "../Breadcrumbs/BreadcrumbsList"
 import Reviews from "../Reviews/Reviews"
 import ProductCharacteristics from "../ProductCharacteristics/ProductCharacteristics"

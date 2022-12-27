@@ -1,26 +1,25 @@
 import { addFavorite, deletFavorite } from "../../reducers/favorite-reducers";
 import { useDispatch, useSelector } from "react-redux"
-const Iphone = { id: 6710, name: "Iphone 13, голубой" };
+const tablet = { id: 3467, name: "Thunderobot 911 Air D" };
 
-const FavoritBtn = () => {
+const FavoritBtnThunderobot = () => {
     const products = useSelector((state) => state.heart.favorites);
     const dispatch = useDispatch();
     const hasInHeart =
         products.some((prevFavorit) => {
-            return prevFavorit.id === Iphone.id;
+            return prevFavorit.id === tablet.id;
         });
-    const handleAddFavorites = (e, Iphone) => {
+    const handleAddFavorites = (e, tablet) => {
 
-        dispatch(addFavorite(Iphone));
+        dispatch(addFavorite(tablet));
     };
-    const handleDeletProduct = (e, Iphone) => {
-        dispatch(deletFavorite(Iphone));
+    const handleDeletProduct = (e, tablet) => {
+        dispatch(deletFavorite(tablet));
     };
-
     return (
         <>
             {hasInHeart ? (
-                <label onClick={(e) => handleDeletProduct(e, Iphone)} className="sidebar__heart">
+                <label onClick={(e) => handleDeletProduct(e, tablet)} className="sidebar__heart">
                     <svg className="sidebar__heart-svg--disabled " width="35" height="35" viewBox="0 0 50 50" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd"
@@ -29,7 +28,7 @@ const FavoritBtn = () => {
                     </svg>
                 </label>
             ) : (
-                <label onClick={(e) => handleAddFavorites(e, Iphone)} className="sidebar__heart">
+                <label onClick={(e) => handleAddFavorites(e, tablet)} className="sidebar__heart">
                     <svg className="sidebar__heart-svg" width="35" height="35" viewBox="0 0 50 50" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd"
@@ -40,6 +39,6 @@ const FavoritBtn = () => {
             )}
         </>
     );
-};
+}
 
-export default FavoritBtn;
+export default FavoritBtnThunderobot;

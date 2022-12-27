@@ -38,9 +38,9 @@ const Reviews = () => {
 const reviews = [
     {
         name: "Марк Г.",
-        avatar: "./img/avatar-1.jpeg",
+        avatar: "../img/avatar-1.jpeg",
         experience: 'менее месяца',
-        star: "./img/star.png",
+        star: "../img/star.png",
         advantages: `это мой первый айфон после огромного количества телефонов на андроиде.
                всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая.`,
 
@@ -49,9 +49,9 @@ const reviews = [
     },
     {
         name: "Валерий Коваленко",
-        avatar: "./img/avatar-2.jpeg",
+        avatar: "../img/avatar-2.jpeg",
         experience: 'Больше года',
-        star: "./img/star.png",
+        star: "../img/star.png",
         advantages: `OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго`,
 
         flaws: `Плохая ремонтопригодность`,

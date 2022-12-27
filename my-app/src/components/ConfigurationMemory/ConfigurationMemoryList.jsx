@@ -1,28 +1,41 @@
+import { addPrice } from "../../reducers/price-reducer";
+import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import "./ConfigurationMemory.css"
 import ConfigurationMemoryItem from "./ConfigurationMemoryItem"
+
+
 const ConfigurationMemoryList = () => {
-    const [currentId, setCurrentId] = useState(7);
-    const onClickHandler = (id) => {
-        setCurrentId(id);
+    const dispatch = useDispatch();
+    const memories = useSelector((state) => state.priceStore.initialPrices);
+    const handleAddPrice = (e) => {
+        const setCurrentMemory = () => {
+            return memories.find(memoryItem => memoryItem.memory === memory)
+        }
+        const item = setCurrentMemory();
+        dispatch(addPrice(item));
+    };
+    const [currentId] = useState(7);
+    const [memory, setMemory] = useState("128 Гб")
+    const MemoryHandler = (e) => {
+        setMemory(e.target.innerText)
     }
     return (
-        <>
-            <li className="list__item configurationMemory">Конфигурация памяти: 128 ГБ</li>
-            <div className="configuration">
-                {configurationMemory.map(({ memory, id }) => (
-                    <ConfigurationMemoryItem
-                        key={memory}
-                        memory={memory}
-                        id={id}
-                        onClickHandler={onClickHandler}
-                        checked={currentId === id} />
-                ))}
-            </div>
-        </>
+        <div className="configuration">
+            <li className="list__item configurationMemory">
+                Конфигурация памяти: {memory}
+            </li>
+            {memories.map(({ memory, id }) => (
+                <ConfigurationMemoryItem
+                    key={memory}
+                    memory={memory}
+                    handleAddPrice={handleAddPrice}
+                    MemoryHandler={MemoryHandler}
+                    id={id}
+                    checked={currentId === id} />
+            ))}
+        </div>
     );
 }
-
-const configurationMemory = [{ memory: "128 Гб", id: 7 }, { memory: "256 Гб", id: 8 }, { memory: "512 Гб", id: 9 },]
 
 export default ConfigurationMemoryList;

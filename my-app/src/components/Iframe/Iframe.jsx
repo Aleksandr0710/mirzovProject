@@ -26,7 +26,7 @@ const Iframe = () => {
     return (
         <Ad>
             <AdvertisementTitle>Реклама</AdvertisementTitle>
-            <AdvertisementImg src="./img/advertising1.jpg" alt="реклама" />
+            <AdvertisementImg src="../img/advertising1.jpg" alt="реклама" />
             <AdvertisementVideo title="AD" src="https://www.youtube.com/embed/GLlEfWNXJaM" allow="fullscreen" />
         </Ad>
     );
