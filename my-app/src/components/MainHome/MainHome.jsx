@@ -9,14 +9,24 @@ const MainHome = () => {
                     <img src="./img/advertising.jpg" alt="товары для дачи" height="320" />
                 </div>
                 <h1 className="PopularCategories__title">Популярные категории</h1>
-                <Link to="/product">
-                    <div className="PopularCategories__Apple">
-                        <b className="Apple">Apple</b>
-                        <span>
-                            <img src="./img/Apple.jpg" alt="Apple" height={80} />
-                        </span>
-                    </div>
-                </Link>
+                <span className="PopularCategories__inner" >
+                    <Link to="/phone">
+                        <div className="PopularCategories">
+                            <b className="phones">Смартфоны</b>
+                            <span>
+                                <img src="./img/Apple.jpg" alt="phones" height={80} />
+                            </span>
+                        </div>
+                    </Link>
+                    <Link to="/tablet">
+                        <div className="PopularCategories">
+                            <b className="phones">Ноутбуки</b>
+                            <span>
+                                <img src="./img/ноут.webp" alt="phones" height={70} />
+                            </span>
+                        </div>
+                    </Link>
+                </span>
             </div>
         </main>
     );

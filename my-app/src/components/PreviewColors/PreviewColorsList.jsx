@@ -2,21 +2,24 @@ import { useState } from "react";
 import "./PreviewColors.css";
 import PreviewColorsItem from "./PreviewColorsItem"
 const PreviewColors = () => {
-  const [currentId, setCurrentId] = useState(4);
-  const onChangeHandler = (id) => {
-    setCurrentId(id);
+  const [currentId] = useState(4);
+  const [previewColor, setPreviewColor] = useState("голубой хрусталь")
+  const previewColorHandler = (e) => {
+    setPreviewColor(e.target.alt)
   }
   return (
     <>
-      <li className=" list__item preview__selected-item"><b>Цвет товара: голубой</b></li>
+      <li className=" list__item preview__selected-item">
+        <b>Цвет товара: {previewColor} </b>
+      </li>
       <div className="preview">
-        {previewColors.map(({ id, alt, img }) => (
+        {previewColors.map(({ id, alt, img, }) => (
           <PreviewColorsItem
             key={img}
             id={id}
             alt={alt}
             img={img}
-            onChangeHandler={onChangeHandler}
+            previewColorHandler={previewColorHandler}
             checked={currentId === id} />
         ))}
       </div>
@@ -26,33 +29,33 @@ const PreviewColors = () => {
 
 const previewColors = [
   {
-    img: "./img/color1.png",
-    alt: "красный iphone",
+    img: "../img/color1.png",
+    alt: "красный",
     id: 1,
   },
   {
-    img: "./img/color2.png",
-    alt: "темно-зеленый iphone",
+    img: "../img/color2.png",
+    alt: "темно-зеленый",
     id: 2,
   },
   {
-    img: "./img/color3.png",
-    alt: "розовый iphone",
+    img: "../img/color3.png",
+    alt: "розовый",
     id: 3,
   },
   {
-    img: "./img/color4.png",
-    alt: "голубой iphone",
+    img: "../img/color4.png",
+    alt: "голубой хрусталь",
     id: 4,
   },
   {
-    img: "./img/color5.png",
-    alt: "черный iphone",
+    img: "../img/color5.png",
+    alt: "белый",
     id: 5,
   },
   {
-    img: "./img/color6.png",
-    alt: "белый iphone",
+    img: "../img/color6.png",
+    alt: "черный",
     id: 6,
   },
 ];

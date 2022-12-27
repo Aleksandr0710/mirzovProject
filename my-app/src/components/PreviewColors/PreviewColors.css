@@ -1,5 +1,6 @@
 .preview__selected-item {
     padding: 4px;
+    margin-bottom: 5px;
 }
 
 .preview {
@@ -17,6 +18,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    user-select: none;
 }
 
 .preview__img-radio:hover {

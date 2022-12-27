@@ -11,17 +11,7 @@ const BreadcrumbsList = () => (
 const breadcrumbs = [
     {
         href: "#",
-        value: "Электроника",
-        isLast: false,
-    },
-    {
-        href: "#",
-        value: "Смартфоны и гаджеты",
-        isLast: false,
-    },
-    {
-        href: "#",
-        value: "Мобильные телефоны",
+        value: "Смартфоны",
         isLast: false,
     },
     {

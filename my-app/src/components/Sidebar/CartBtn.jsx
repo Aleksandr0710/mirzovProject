@@ -9,11 +9,11 @@ const CartBtn = () => {
     products.some((prevProduct) => {
       return prevProduct.id === Iphone.id;
     });
-  const handleAddProduct = (e, product) => {
-    dispatch(addProduct(product));
+  const handleAddProduct = (e, Iphone) => {
+    dispatch(addProduct(Iphone));
   };
-  const handleDeletProduct = (e, product) => {
-    dispatch(deletProduct(product));
+  const handleDeletProduct = (e, Iphone) => {
+    dispatch(deletProduct(Iphone));
   };
 
   return (

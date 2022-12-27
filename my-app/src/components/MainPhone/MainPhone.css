@@ -1,0 +1,124 @@
+.title {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.countTitle {
+    font-size: 30px;
+    color: #888888;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.nav {
+    font-size: 17px;
+}
+
+.apple {
+    display: flex;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    width: 700px;
+    height: 200px;
+    padding: 20px;
+    color: black;
+    margin-bottom: 140px;
+}
+
+.apple:hover {
+    box-shadow: 0 0 0 4px #888888 inset;
+    outline: 0;
+    cursor: pointer;
+}
+
+.appleTitle {
+    padding-bottom: 9px;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.inner {
+    padding: 10px;
+}
+
+@media (max-width:425px) {
+    .title {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:425px) {
+    .nav {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:425px) {
+    .appleTitle {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width:425px) {
+    .apple {
+        display: flex;
+        border: 1px solid #888888;
+        border-radius: 4px;
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+        color: black;
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width:360px) {
+    .apple {
+        display: flex;
+        border: 1px solid #888888;
+        border-radius: 4px;
+        width: 200px;
+        height: 220px;
+        padding: 5px;
+        color: black;
+    }
+}
+
+@media (max-width:360px) {
+    .apple img {
+        height: 80px;
+    }
+}
+
+@media (max-width:360px) {
+    .appleTitle {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:360px) {
+    .text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:360px) {
+    .nav {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:360px) {
+    .title {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+}

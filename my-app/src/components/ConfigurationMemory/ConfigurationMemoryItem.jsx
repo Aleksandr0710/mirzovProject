@@ -1,4 +1,5 @@
-const ConfigurationMemoryItem = ({ memory, id, onClickHandler, checked }) => {
+const ConfigurationMemoryItem = ({ memories, handleAddPrice, memory, id, MemoryHandler, checked }) => {
+    
     return (
         <>
             <input className="configuration__radio radio "
@@ -6,8 +7,15 @@ const ConfigurationMemoryItem = ({ memory, id, onClickHandler, checked }) => {
                 name="configuration"
                 id={id}
                 key={id}
-                defaultChecked={checked} />
-            <label htmlFor={id} className="configuration__button-radio" onClick={() => onClickHandler(id)}>{memory}</label>
+                defaultChecked={checked}
+                onClick={(e) => handleAddPrice(e, memory)}
+            />
+            <label
+                htmlFor={id}
+                className="configuration__button-radio"
+                onClick={(e) => MemoryHandler(e)}>
+                {memory}
+            </label>
         </>
     );
 }
