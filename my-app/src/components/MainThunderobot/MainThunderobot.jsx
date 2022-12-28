@@ -1,7 +1,7 @@
 import BreadcrumbsList from "../Breadcrumbs/BreadcrumbsThunderobot"
 import Reviews from "../Reviews/Reviews"
 import ReviewsForm from "../ReviewsForm/ReviewsForm"
-import Sidebar from "../Sidebar/SidebarThunderobot"
+import SidebarThunderobot from "../SidebarThunderobot/SidebarThunderobot"
 import Iframe from "../Iframe/Iframe"
 import MainSliderList from "../MainSlider/MainSliderThunderobot"
 
@@ -34,7 +34,7 @@ const MainThunderobot = () => {
                         </p>
                     </section>
                     <section>
-                        <Sidebar />
+                        <SidebarThunderobot />
                         <Iframe />
                     </section>
                 </div>

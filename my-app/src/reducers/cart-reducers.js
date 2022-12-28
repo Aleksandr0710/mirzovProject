@@ -13,13 +13,6 @@ export const cartSlice = createSlice({
       };
       const data = JSON.stringify(newState.products);
       localStorage.setItem("cart-product", data);
-
-      if (
-        prevState.products.some(
-          (prevProduct) => prevProduct.id === prevProduct.id
-        )
-      )
-        return prevState;
       return {
         ...prevState,
         products: [...prevState.products, action.payload],

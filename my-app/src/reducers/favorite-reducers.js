@@ -13,13 +13,6 @@ export const heartSlice = createSlice({
       };
       const data = JSON.stringify(newState.favorites);
       localStorage.setItem("favorites-product", data);
-
-      if (
-        prevState.favorites.some(
-          (prevFavorit) => prevFavorit.id === prevFavorit.id
-        )
-      )
-        return prevState;
       return {
         ...prevState,
         favorites: [...prevState.favorites, action.payload],
