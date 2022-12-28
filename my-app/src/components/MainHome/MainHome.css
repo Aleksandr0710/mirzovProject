@@ -45,12 +45,6 @@
     }
 }
 
-@media (max-width:360px) {
-    .phones {
-        font-size: 17px;
-    }
-}
-
 @media (min-width: 1024px) and (max-width: 1499px) {
     .gallery img {
         height: 220px;
@@ -84,6 +78,12 @@
 }
 
 @media (max-width:425px) {
+    .PopularCategories__inner {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:425px) {
     .phones {
         font-size: 17px;
     }
@@ -113,6 +113,12 @@
         width: 130px;
         height: 90px;
         margin-bottom: 267px;
+    }
+}
+
+@media (max-width:360px) {
+    .phones {
+        font-size: 17px;
     }
 }
 

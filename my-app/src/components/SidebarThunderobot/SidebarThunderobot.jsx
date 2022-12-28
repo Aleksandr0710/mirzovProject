@@ -1,7 +1,7 @@
 import { useCurrentDate } from "@kundinos/react-hooks"
 import CartBtnThunderobot from "./CartBtnThunderobot"
 import FavoritBtnThunderobot from "./FavoritBtnThunderobot"
-import "./Sidebar.css"
+import "./SidebarThunderobot.css"
 
 const SidebarThunderobot = () => {
     const currentDate = useCurrentDate();
